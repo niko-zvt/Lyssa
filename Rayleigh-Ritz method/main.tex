@@ -74,7 +74,7 @@
 \end{equation}
 
 \begin{equation}
-	J[y] = \int_{a}^{b} [y^{\prime\prime}(x) + P(x)y^{\prime}(x) + q(x)y(x)] \;  dx.
+	J[y] = \int_{a}^{b} [y''(x) + P(x)y'(x) + q(x)y(x)] \;  dx.
 \end{equation}
 
 Если теперь функции $y(x)$ ставится в соответствие по определённому правилу или закону вновь функция $z(x)$, то говорят, что задан оператор $z = L(y)$ или $z = Ly$. Примерами дифференциальных операторов могут служить:
@@ -195,7 +195,7 @@ sub_section_minimum_conditions}
 	\Phi'_{u} - \frac{d}{dx}\Phi'_{u} = 0.
 \end{equation}
 
-\noindent Уравнение \ref{euler_equation} называют уравнением Эйлера. Если предположить существование непрерывной второй производной от $u(x)$, то уравнение можно записать в виде:
+\noindent Уравнение (\ref{euler_equation}) называют уравнением Эйлера. Если предположить существование непрерывной второй производной от $u(x)$, то уравнение можно записать в виде:
 
 \begin{equation}
 	\Phi''_{u'u'} \cdot u'' + \Phi''_{uu'} \cdot u' + \Phi''_{xu'} - Phi'_{u} = 0.
@@ -251,7 +251,7 @@ sub_section_minimum_conditions}
 
 На практике последовательность финитных функций ${\lbrace \varphi_{n} \rbrace}$ обычно строят с помощью системы многочленов $1$, $x$, $x^2$, $x^3$, $\ldots$, $x^n$ или системы тригонометрических функций $\sin (x)$, $\sin (2x)$, $\sin (3x)$, $\ldots$, $\sin (nx)$. Обе системы являются полными в пространстве непрерывных функций.
 
-\subsection{Практическое применение метода Ритца для решения вариационных задач}
+\subsection{Применение метода Ритца для решения вариационных задач}
 
 Имеем линейное дифференциальное уравнение 2-го порядка:
 
@@ -366,7 +366,177 @@ sub_section_minimum_conditions}
 
 Данные кривые будут единственными кривыми возможного экстремума функционала с данными граничными условиями (см. приложение \ref{Appendix_A}). 
 
+\subsubsection{Решение краевой задачи Дирихле (1-го рода)}
 
+Данную задачу также называют – простейшей вариационной задачей. В задаче требуется найти функцию $\varphi(x)$, доставляющую экстремум функционалу
+
+\begin{equation}
+	J[\varphi] = \int_{a}^{b} f(x, \varphi, \varphi')dx,
+\end{equation}
+
+\noindent при условиях $\varphi(a) = \varphi_{0}$ и $\varphi(b) = \varphi_{1}$.
+
+Если граничные условия однородны, то есть $\varphi(a) = \varphi(b) = 0$, то проще всего в качестве базисных функций выбрать функции, удовлетворяющие этим условиям: $N_{i}(a) = N_{i}(b) = 0$, $n = 1, 2, \ldots, m$. Например:
+
+\begin{equation}
+	N_{i}(x) = (x-a)(x-b)\varphi_{i}(x),
+\end{equation}
+
+\noindent где $\varphi_{i}(x)$ – какие-нибудь непрерывные функции. Очевидно, что при этом и аппроксимация 
+
+\begin{equation}
+	\varphi_{n}(x) = \sum_{i=0}^n \alpha_{i}N_{i}(x)
+\end{equation}
+
+\noindent при любых $\alpha_{i}$ будет удовлетворять граничным условиям.
+
+Если условия неоднородны, например $\varphi(a) = \varphi_{0}$ и $\varphi(b) = \varphi_{1}$, где хотя бы одно из чисел $\varphi_{0}$ или $\varphi_{1}$ отлично от нуля, то решение вариационной задачи нужно искать в виде
+
+\begin{equation}\label{equation_solve_var_rank_2}
+	\varphi_{n}(x) = \sum_{i=0}^n \alpha_{i}N_{i}(x) + \psi(x),
+\end{equation}
+
+\noindent причём $\psi(x)$ удовлетворяет заданным граничным условиям $\psi(a) = \varphi_{0}$, $\psi(b) = \varphi_{1}$.
+
+\subsubsection{Решение краевой задачи Неймана (2-го рода)}
+
+Имеем линейное дифференциальное уравнение 2-го порядка:
+
+\begin{equation}\label{equation_rang_2}
+	\frac{d}{dx}(x^2 \frac{d \varphi}{dx}) - 2\varphi = -1 - \ln{x^2}.
+\end{equation}
+
+\noindent Граничные условия, которого:
+
+\begin{equation}
+	\varphi'(1) = 0, \; \varphi(2) = 1.
+\end{equation}
+
+Исходная задача эквивалентна нахождению функции $\varphi(x)$, удовлетворяющей граничным (краевым) условиям и минимизирующую функционал
+
+\begin{equation}
+	J[\varphi] = \int_{a}^{b} f(x, \varphi, \varphi')dx + g(\varphi(a), \varphi(b)),
+\end{equation}
+
+\noindent где $g(\varphi(a), \varphi(b))$ – заданная функция, имеющая непрерывные производные по $\varphi(a)$ и $\varphi(b)$.
+
+Для граничных условий $\varphi'(1) = 0$, $\varphi(2) = 1$ задача эквивалентна частному случаю краевой задачи Неймана (2-го рода). Общий вид которой:
+
+\begin{equation}
+	J[\varphi] = \frac{1}{2} \int_{a}^{b} [p(x) \varphi'^2 + \varphi^2 - 2f(x)\varphi]dx - \gamma_{1} p(a) \varphi(a) + \gamma_{2} p(b) \varphi(b).
+\end{equation}
+
+\noindent Условия экстремума:
+
+\begin{equation}
+	\frac{d}{dx} (p(x) \frac{d\varphi}{dx}) - q(x)\varphi = -f(x).
+\end{equation}
+
+\noindent Граничные условия:
+
+\begin{equation}
+	\varphi'(a) = \gamma_{1}, \; \varphi(b) = \gamma_{2}.
+\end{equation}
+
+Для того чтобы функционал достигал на функции экстремума, необходимо, чтобы эта функция удовлетворяла уравнению Эйлера и условиям трансверсальности. Функция, которую в дальнейшем необходимо будет подставить в функционал, должна иметь вид
+
+\begin{equation}
+	f(x, \varphi, \varphi') = \frac{x^2}{2}\varphi'^2 + \varphi^2 - (1+\ln{x^2})\varphi,
+\end{equation}
+
+\begin{equation}
+	g(\varphi(a)) = 0.
+\end{equation}
+
+\noindent Проверим, удовлетворяет ли функция уравнению Эйлера и условиям трансверсальности. 
+
+Во-первых, подставим функцию $f(x, \varphi, \varphi')$ в общий вид уравнения Эйлера (\ref{euler_equation}) и попытаемся получить исходную форму (\ref{equation_rang_2}).
+
+\begin{equation}
+	\frac{\partial^2 f}{\partial \varphi} - \frac{d}{dx}\frac{\partial^2 f}{\partial \varphi'} = 0;
+\end{equation}
+
+\begin{equation}
+	2\varphi - (1 + \ln{x^2}) - \frac{d}{dx}(x^2 \varphi') = 0;
+\end{equation}
+
+\begin{equation}
+	\frac{d}{dx}(x^2 \varphi') - 2\varphi = -1 - \ln(x^2).
+\end{equation}
+
+\noindent Во-вторых, проверим условия трансверсальности:
+
+\begin{equation}
+	[\frac{\partial^2 f}{\partial \varphi'} - \frac{\partial g}{d\varphi(a)}]_{x=a} = 0;
+\end{equation}
+
+\begin{equation}
+	\varphi'(1) = 0.
+\end{equation}
+
+\noindent Оба условия соблюдены, поэтому запишем задачу в вариационной формулировке:
+
+\begin{equation}\label{equation_functional_rank_2}
+	J[\varphi] = \int_{1}^{2} [\frac{x^2}{2}\varphi'^2 + \varphi^2 - (1 + \ln{x^2})\varphi]dx.
+\end{equation}
+
+Имеем одну фиксированную точку $(x=2)$, а другую $(x=1)$ – подвижную. Для первой должно выполняться условие $\varphi(2)=1$, а для второй точки – условие $\varphi'(1)=0$ как условие трансверсальности. Последнее будет выполняться автоматически, реализуя условия минимума функционала. Поэтому в соответствии с (\ref{equation_solve_var_rank_2}), в данном случае $\psi(x) = 1$, а в качестве $\lbrace N_{i} \rbrace$ - любые линейно независимые функции, равные нулю при $x=2$.
+
+\begin{equation}
+	\varphi(x) \approx \varphi_{n}(x) = (\alpha_{1} + \alpha_{2}x + \alpha_{3}x^2 + \cdots + \alpha_{n}x^{n-1})(x-2)+1.
+\end{equation}
+
+\noindent Положим $n = 3$
+
+\begin{equation}
+	\varphi^{[3]}(x) = (\alpha_{1} + \alpha_{2}x + \alpha_{3}x^2)(x-2)+1.
+\end{equation}
+
+\noindent Подставим функцию $\varphi^{[3]}(x)$ в функционал $J[\varphi]$ (\ref{equation_functional_rank_2}), интегрируя, получим функцию $\Phi(\alpha_{1}, \alpha_{2}, \alpha_{3})$, зависящую от неизвестных коэффициентов, но уже не зависящую от $x$.
+
+\begin{equation}
+	\Phi(\alpha_{1}, \alpha_{2}, \alpha_{3}) = \frac{11}{3}\alpha_{1}\alpha_{2} - \frac{19}{9}\alpha_{2} - \frac{155}{72}\alpha_{3} - \ln{16} - 3\alpha_{1} + \frac{14}{3}\alpha_{1}\alpha_{3} + \frac{38}{5}\alpha_{2}\alpha_{3} + \alpha_{1}\ln{16}.
+\end{equation}
+
+Решим задачу минимизации функции трех переменных для $\Phi(\alpha_{1}, \alpha_{2}, \alpha_{3})$
+
+\begin{equation}
+	\frac{\partial \Phi}{\partial \alpha_{1}} = 0, \;
+	\frac{\partial \Phi}{\partial \alpha_{2}} = 0, \;
+	\frac{\partial \Phi}{\partial \alpha_{3}} = 0.
+\end{equation}
+
+\noindent Получим систему из трёх уравнений с тремя неизвестными
+
+\begin{equation}
+	\begin{cases}
+		3\alpha_{1} + \frac{11}{3}\alpha_{2} + \frac{14}{3}\alpha_{3} + \ln{16} - 3 = 0 \\
+		\\
+		\frac{11}{3}\alpha_{1} + \frac{26}{5}\alpha_{2} + \frac{38}{5}\alpha_{3} + \ln{4 \cdot 2^{\frac{2}{3}}} - \frac{19}{9} = 0 \\
+		\\
+		\frac{14}{3}\alpha_{1} + \frac{38}{5}\alpha_{2} + \frac{433}{35}\alpha_{3} + \ln{4 \cdot 2^{\frac{2}{3}}} - \frac{155}{72} = 0
+	\end{cases}
+\end{equation}
+
+\noindent Решая данную систему, мы находим неизвестные коэффициенты
+
+\begin{displaymath}
+	\alpha_{1} = \frac{24851}{876} - \frac{2992}{73} \ln{2} = -0.040817774913557,
+\end{displaymath}
+
+\begin{equation}	
+	\alpha_{2} = -\frac{3010}{73} + \frac{4364}{73} \ln{2} = -0.204031451556182, 
+\end{equation}
+
+\begin{displaymath}
+	\alpha_{3} = \frac{8645}{584} - \frac{1568}{73} \ln{2} = -0.085339439972523.
+\end{displaymath}
+
+Таким образом, приближенное решение данной задачи имеет вид (см. приложение \ref{Appendix_B})
+
+\begin{equation}	
+	\phi_{\ast}^{[3]} = (-0.040817774913557+0.204031451556182x -0.085339439972523906387x^2)(x-2) + 1.
+\end{equation}
 
 
 \newpage
