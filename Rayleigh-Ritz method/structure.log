@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.18)  18 JUN 2020 14:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.5.26)  19 JUN 2020 14:27
 entering extended mode
 **./structure.tex
 (structure.tex
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-06-03>
+L3 programming layer <2020-05-15>
 
 ! LaTeX Error: \usepackage before \documentclass.
 
@@ -109,14 +109,27 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.39 \usepackage{
+l.35 \usepackage{
+                 indentfirst} % Красная строка в первом ...
+
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.41 \usepackage{
                  geometry} % Required for adjusting page dimensions and margins
 
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
 ! Undefined control sequence.
-l.41 \geometry
+l.43 \geometry
               {
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -131,7 +144,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.42 	p
+l.44 	p
        aper=a4paper, % Paper size, change to letterpaper for US letter size
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -240,7 +253,7 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no , in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 42--52
+Overfull \hbox (20.0pt too wide) in paragraph at lines 44--54
 []
  []
 
@@ -251,7 +264,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59 \usepackage[T1,T2A]{
+l.61 \usepackage[T1,T2A]{
                          fontenc}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
@@ -263,7 +276,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.60 \usepackage[utf8]{
+l.62 \usepackage[utf8]{
                        inputenc}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
@@ -275,7 +288,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.61 \usepackage[english,russian]{
+l.63 \usepackage[english,russian]{
                                   babel}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
@@ -287,13 +300,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.63 \usepackage{
+l.65 \usepackage{
                  XCharter} % Use the XCharter fonts
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
 ! Undefined control sequence.
-l.78 \mdfdefinestyle
+l.80 \mdfdefinestyle
                     {commandline}{
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -308,7 +321,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.78 \mdfdefinestyle{c
+l.80 \mdfdefinestyle{c
                       ommandline}{
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -519,7 +532,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no = in font nullfont!
 ! Undefined control sequence.
-l.87 	frametitlefont={\normalfont\sffamily\color
+l.89 	frametitlefont={\normalfont\sffamily\color
                                                 {white}\hspace{-1em}},
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -578,17 +591,17 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no k in font nullfont!
 Missing character: There is no , in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 78--91
+Overfull \hbox (20.0pt too wide) in paragraph at lines 80--93
 []
  []
 
 
-Overfull \hbox (22.44447pt too wide) in paragraph at lines 78--91
+Overfull \hbox (22.44447pt too wide) in paragraph at lines 80--93
 \OT1/cmss/m/n/10 white
  []
 
 ! Undefined control sequence.
-l.110 \mdfdefinestyle
+l.112 \mdfdefinestyle
                      {file}{
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -603,7 +616,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.110 \mdfdefinestyle{f
+l.112 \mdfdefinestyle{f
                        ile}{
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -652,7 +665,7 @@ Missing character: There is no 8 in font nullfont!
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    t
-l.113 	to
+l.115 	to
          pline=false, bottomline=false,
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -767,7 +780,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no = in font nullfont!
 ! Undefined control sequence.
-l.118 		\draw
+l.120 		\draw
              [fill=black!10!white](P)++(0,-1.2em)rectangle(P-|O);
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -828,7 +841,7 @@ Missing character: There is no O in font nullfont!
 Missing character: There is no ) in font nullfont!
 Missing character: There is no ; in font nullfont!
 ! Undefined control sequence.
-l.119 		\node
+l.121 		\node
              [anchor=north west]
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -863,7 +876,7 @@ Missing character: There is no | in font nullfont!
 Missing character: There is no O in font nullfont!
 Missing character: There is no ) in font nullfont!
 ! Undefined control sequence.
-l.120 		at(P-|O){\ttfamily\mdfilename
+l.122 		at(P-|O){\ttfamily\mdfilename
                                      };
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -873,7 +886,7 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no ; in font nullfont!
 ! Undefined control sequence.
-l.123 		\draw
+l.125 		\draw
              (O-|P)++(-\l,0)--++(\l,\l)--(P)--(P-|O)--(O)--cycle;
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -937,7 +950,7 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no ; in font nullfont!
 ! Undefined control sequence.
-l.124 		\draw
+l.126 		\draw
              (O-|P)++(-\l,0)--++(0,\l)--++(\l,0);
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -994,12 +1007,12 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no k in font nullfont!
 Missing character: There is no , in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 110--128
+Overfull \hbox (20.0pt too wide) in paragraph at lines 112--130
 []
  []
 
 ! Undefined control sequence.
-l.148 \mdfdefinestyle
+l.150 \mdfdefinestyle
                      {question}{
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1014,7 +1027,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.148 \mdfdefinestyle{q
+l.150 \mdfdefinestyle{q
                        uestion}{
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1067,7 +1080,7 @@ Missing character: There is no 8 in font nullfont!
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    r
-l.151 	r
+l.153 	r
         oundcorner=5pt,
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1113,7 +1126,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no = in font nullfont!
 ! Undefined control sequence.
-l.154 		\draw
+l.156 		\draw
              (P-|O)node[xshift=1em,anchor=west,fill=white,draw,rounded corne...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1199,7 +1212,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
-l.155 		Question \theQuestion
+l.157 		Question \theQuestion
                              \questionTitle};
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1208,7 +1221,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.155 		Question \theQuestion\questionTitle
+l.157 		Question \theQuestion\questionTitle
                                            };
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1219,13 +1232,13 @@ and I'll forget about whatever was undefined.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no , in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 148--158
+Overfull \hbox (20.0pt too wide) in paragraph at lines 150--160
 []
  []
 
 \c@Question=\count167
 ! Undefined control sequence.
-l.181 \mdfdefinestyle
+l.183 \mdfdefinestyle
                      {warning}{
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1240,7 +1253,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.181 \mdfdefinestyle{w
+l.183 \mdfdefinestyle{w
                        arning}{
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1335,7 +1348,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no = in font nullfont!
 ! Undefined control sequence.
-l.186 		\draw
+l.188 		\draw
              (P-|O)++(-0.5em,0)node(tmp1){};
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1373,7 +1386,7 @@ Missing character: There is no 1 in font nullfont!
 Missing character: There is no ) in font nullfont!
 Missing character: There is no ; in font nullfont!
 ! Undefined control sequence.
-l.187 		\draw
+l.189 		\draw
              (P-|O)++(0.5em,0)node(tmp2){};
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1412,7 +1425,7 @@ Missing character: There is no ; in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    [
-l.188 		\fill[
+l.190 		\fill[
               black,rotate around={45:(P-|O)}](tmp1)rectangle(tmp2);
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1421,7 +1434,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    [
-l.188 		\fill[
+l.190 		\fill[
               black,rotate around={45:(P-|O)}](tmp1)rectangle(tmp2);
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1483,7 +1496,7 @@ Missing character: There is no 2 in font nullfont!
 Missing character: There is no ) in font nullfont!
 Missing character: There is no ; in font nullfont!
 ! Undefined control sequence.
-l.189 		\node
+l.191 		\node
               at(P-|O){\color{white}\scriptsize\bf !};
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1500,7 +1513,7 @@ Missing character: There is no | in font nullfont!
 Missing character: There is no O in font nullfont!
 Missing character: There is no ) in font nullfont!
 ! Undefined control sequence.
-l.189 		\node at(P-|O){\color
+l.191 		\node at(P-|O){\color
                              {white}\scriptsize\bf !};
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1514,7 +1527,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
-l.189 		\node at(P-|O){\color{white}\scriptsize
+l.191 		\node at(P-|O){\color{white}\scriptsize
                                                \bf !};
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1523,7 +1536,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.189 		\node at(P-|O){\color{white}\scriptsize\bf
+l.191 		\node at(P-|O){\color{white}\scriptsize\bf
                                                    !};
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1534,7 +1547,7 @@ and I'll forget about whatever was undefined.
 Missing character: There is no ! in font nullfont!
 Missing character: There is no ; in font nullfont!
 ! Undefined control sequence.
-l.190 		\draw
+l.192 		\draw
              [very thick](P-|O)++(0,-1em)--(O);%--(O-|P);
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1576,12 +1589,12 @@ Missing character: There is no O in font nullfont!
 Missing character: There is no ) in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 181--193
+Overfull \hbox (20.0pt too wide) in paragraph at lines 183--195
 []
  []
 
 ! Undefined control sequence.
-l.212 \mdfdefinestyle
+l.214 \mdfdefinestyle
                      {info}{%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1596,7 +1609,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.212 \mdfdefinestyle{i
+l.214 \mdfdefinestyle{i
                        nfo}{%
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1690,7 +1703,7 @@ Missing character: There is no = in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    [
-l.217 		\fill[
+l.219 		\fill[
               black](P-|O)circle[radius=0.4em];
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1699,7 +1712,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    [
-l.217 		\fill[
+l.219 		\fill[
               black](P-|O)circle[radius=0.4em];
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1743,7 +1756,7 @@ Missing character: There is no m in font nullfont!
 Missing character: There is no ] in font nullfont!
 Missing character: There is no ; in font nullfont!
 ! Undefined control sequence.
-l.218 		\node
+l.220 		\node
               at(P-|O){\color{white}\scriptsize\bf i};
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1760,7 +1773,7 @@ Missing character: There is no | in font nullfont!
 Missing character: There is no O in font nullfont!
 Missing character: There is no ) in font nullfont!
 ! Undefined control sequence.
-l.218 		\node at(P-|O){\color
+l.220 		\node at(P-|O){\color
                              {white}\scriptsize\bf i};
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1774,7 +1787,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
-l.218 		\node at(P-|O){\color{white}\scriptsize
+l.220 		\node at(P-|O){\color{white}\scriptsize
                                                \bf i};
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1783,7 +1796,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.218 		\node at(P-|O){\color{white}\scriptsize\bf
+l.220 		\node at(P-|O){\color{white}\scriptsize\bf
                                                    i};
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1794,7 +1807,7 @@ and I'll forget about whatever was undefined.
 Missing character: There is no i in font nullfont!
 Missing character: There is no ; in font nullfont!
 ! Undefined control sequence.
-l.219 		\draw
+l.221 		\draw
              [very thick](P-|O)++(0,-0.8em)--(O);%--(O-|P);
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1838,10 +1851,73 @@ Missing character: There is no O in font nullfont!
 Missing character: There is no ) in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 212--222
+Overfull \hbox (20.0pt too wide) in paragraph at lines 214--224
 []
  []
 
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.239 \usepackage{
+                  graphicx}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+! Undefined control sequence.
+l.240 \graphicspath
+                   {{images/}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.240 \graphicspath{{i
+                      mages/}}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no / in font nullfont!
+! Undefined control sequence.
+l.241 \DeclareGraphicsExtensions
+                                {.pdf,.png,.jpg}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no . in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no g in font nullfont!
 )
 ! Emergency stop.
 <*> ./structure.tex
@@ -1850,10 +1926,10 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 212--222
 
  
 Here is how much of TeX's memory you used:
- 44 strings out of 480797
- 689 string characters out of 2904414
- 238773 words of memory out of 3000000
- 16147 multiletter control sequences out of 15000+200000
+ 44 strings out of 480795
+ 661 string characters out of 2901632
+ 238783 words of memory out of 3000000
+ 16149 multiletter control sequences out of 15000+200000
  532811 words of font info for 26 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  13i,1n,15p,130b,93s stack positions out of 5000i,500n,10000p,200000b,50000s

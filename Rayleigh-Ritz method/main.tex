@@ -40,7 +40,7 @@
 \maketitle % Print the title
 
 %----------------------------------------------------------------------------------------
-%	INTRODUCTION
+%	Введение
 %----------------------------------------------------------------------------------------
 
 \section*{Введение} % Unnumbered section
@@ -57,26 +57,354 @@
 
 Выделяют два основных типа методов решения вариационных задач. К первому типу относятся методы, сводящие исходную задачу к решению дифференциальных уравнений. Альтернативой являются так называемые прямые методы. Эти методы тем или иным способом решают исходную задачу по поиску функции в заданном классе, которая доставляла бы экстремальное значение заданному функционалу. Один из самых популярных методов этого класса — метод Ритца (также называемый методом Рэлея-Ритца).
 
-% Math equation/formula
+%----------------------------------------------------------------------------------------
+%	ГЛАВА 1
+%----------------------------------------------------------------------------------------
+
+\section{Вариационное исчисление} % Numbered section
+
+\subsection{Понятие функционала}
+
+В курсе высшей математики вводилось понятие функции. Если некоторому числу $x$ из области $D$ ставится в соответствие по определённому правилу или закону число $y$, то говорят, что задана функция $y=f(x)$. Область $D$ называют областью определения функции $f(x)$.
+
+Если же функции $y(x)$ ставится в соответствие по определённому правилу или закону число $J$, то говорят, что задан функционал $J = J[y]$. Примером функционала может быть определённый интеграл от функции $y(x)$ или от некоторого выражения, зависящего от $y(x)$,
+
 \begin{equation}
-	I = \int_{a}^{b} f(x) \; \text{d}x.
+	J[y] = \int_{a}^{b} y(x) \; dx,
 \end{equation}
 
+\begin{equation}
+	J[y] = \int_{a}^{b} [y^{\prime\prime}(x) + P(x)y^{\prime}(x) + q(x)y(x)] \;  dx.
+\end{equation}
 
+Если теперь функции $y(x)$ ставится в соответствие по определённому правилу или закону вновь функция $z(x)$, то говорят, что задан оператор $z = L(y)$ или $z = Ly$. Примерами дифференциальных операторов могут служить:
 
-%----------------------------------------------------------------------------------------
-%	PROBLEM 1
-%----------------------------------------------------------------------------------------
+\begin{equation}
+	Ly = y'' + P(x)y' + q(x)y,
+\end{equation}
 
-\section{Problem title} % Numbered section
+\begin{equation}
+    Lu = \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2}.
+\end{equation}
 
-In hac habitasse platea dictumst. Curabitur mattis elit sit amet justo luctus vestibulum. In hac habitasse platea dictumst. Pellentesque lobortis justo enim, a condimentum massa tempor eu. Ut quis nulla a quam pretium eleifend nec eu nisl. Nam cursus porttitor eros, sed luctus ligula convallis quis. Nam convallis, ligula in auctor euismod, ligula mauris fringilla tellus, et egestas mauris odio eget diam. Praesent sodales in ipsum eu dictum.
+Дадим более строгое определение функционала. Пусть $A$ – множество элементов произвольной природы, и пусть каждому элементу $u \in A$ приведено в соответствие одно и только одно число $J[u]$. В этом случае говорят, что на множестве $A$ задан функционал $J$. Множество $A$ называется областью определения функционала $J$ и обозначается через $D(J)$; число $J[u]$ называется значением функционала $J$ на элементе $u$. Функционал $J$ называется вещественным, если все его значения вещественны. Функционал $J$ называется линейным, если его область определения есть линейное множество и если
+
+\begin{equation}
+    J[\alpha u + \beta v] = \alpha \cdot J[u] + \beta \cdot J[v].
+\end{equation}
 
 %------------------------------------------------
 
-\subsection{Theoretical viewpoint}
+\subsection{Задачи, приводящие к экстремуму функционала}
 
-В курсе высшей математики вводилось понятие функции. Если некоторому числу $x$ из области $D$ ставится в соответствие по определенному правилу или закону число $y$, то говорят, что задана функция $y=f(x)$. Область $D$ называют областью определения функции $f(x)$.
+Зарождение вариационного исчисления относят обычно к 1696 году, когда И. Бернулли поставил так называемую задачу о брахистохроне: определить форму кривой, лежащей в вертикальной плоскости, по которой тяжёлая материальная точка, двигаясь под действием только одной силы тяжести и не имеющая начальной скорости, перейдёт из верхнего положения $A$ в нижнее положение $B$ за минимум времени, рисунок \ref{img_brachistochrone}. Эта задача сводится к отысканию исходной функции $y(x)$ – брахистохроны.
+
+\begin{figure}[h!]
+\center{\includegraphics[height=4cm]{images/img_001.png}}
+\caption{Задача о брахистохроне}
+\label{img_brachistochrone}
+\end{figure}
+
+Пусть уравнение кривой $AB$ есть $y = u(x)$. Рассмотрим некоторый момент времени $t$, и пусть в этот момент движущаяся точка находится на расстоянии $y$ от оси $x$. Тогда $\upsilon = \sqrt{2g\upsilon}$ , где $\upsilon$ – скорость движущейся точки, $g$ – ускорение свободного падения. В то же время:
+
+\begin{equation}
+    \upsilon = \frac{dS}{dt} = \sqrt{1 + u'^2} \frac{dx}{dt},
+\end{equation}
+
+\noindent отсюда следует, что
+
+\begin{equation}
+    dt = \sqrt{\frac{1 + u'^2}{2gu}}dx,
+\end{equation}
+
+\noindent Обозначим через $T$ время, в течение которого материальная точка достигает точки $B$. Интегрируя, находим
+
+\begin{equation}
+    T = \frac{1}{\sqrt{2g}} \int_{0}^{a} \sqrt{\frac{1 + u'^2}{u}} \; dx.
+\end{equation}
+
+\noindent Задача сводится к следующему: надо найти функцию $y = u(x)$, удовлетворяющую условию $u(0) = 0$, $u(a) = b$ и сообщающую интегралу наименьшее значение. Условия означают, что искомая кривая должна проходить через заданные точки $A$ и $B$. Такого типа условия принято называть граничными, или краевыми, так как они относятся к концам промежутка, на котором должна быть определена искомая функция.
+
+\begin{info}
+	Данная задача относится к ветви математического анализа, называемой вариационным исчислением. Примером применения кривой в виде брахистохроны служит образующая цилиндрических поверхностей, используемых на детских площадках, в аттракционах для спуска с возвышения, на трамплинах.
+\end{info}
+
+\subsection{Первая вариация функционала}
+
+Задача вариационного исчисления состоит в следующем: дан функционал $J$ с областью определения $D(J)$; требуется найти элемент $u_{0} \in D(J)$, сообщающий функционалу либо минимальное значение, либо максимальное. Задача о максимуме функционала $J$ тождественна с задачей о минимуме функционала $\text{--} J$.
+
+Будем рассматривать функционал $J$. Возьмём произвольный элемент $u \in D(J)$ и произвольный элемент $\eta \in M $. Обозначим через $\alpha$ произвольное вещественное число. Нетрудно видеть, что элемент $ u + \alpha \eta \in D(J)$. Составим выражение $J[u + \alpha \eta]$. Данное выражение есть непрерывно дифференцируемая функция от $\alpha$. Вычислим её производную и возьмём значение этой производной при $\alpha = 0$:
+
+\begin{equation}
+    \frac{dJ[u + \alpha \eta]}{d\alpha}.
+\end{equation}
+
+\noindent В результате получим число, которое можно рассматривать как значение функционала, зависящего от двух элементов $u$ и $\eta$. Функционал
+
+\begin{equation}
+    \frac{dJ[u + \alpha \eta]}{d\alpha} \cdot \alpha
+\end{equation}
+
+\noindent называется первой вариацией функционала $J$ на элементе $u$ и обозначается символом $\delta J[u, \eta]$:
+
+\begin{equation}
+     \delta J[u, \eta] = \frac{dJ[u + \alpha \eta]}{d\alpha} \cdot \alpha.
+\end{equation}
+
+\noindent При этом разность двух функций $u \in D(J)$ и $u_{1} \in D(J)$ называют вариацией функции $u$ и обозначают $\delta u = u(x) \text{--} u_{1}(x)$.
+
+\subsection{Необходимое условие минимума функционала}\label{
+sub_section_minimum_conditions}
+
+Пусть функционал $J$ достигает на некотором элементе $u_{0}$ относительного минимума. Возьмём произвольный элемент $\eta \in M$ и произвольное вещественное число $\alpha$. По определению относительного минимума при достаточно малых значениях $\alpha$
+
+\begin{equation}
+     dJ[u_{0} + \alpha\eta] \geq dJ[u_{0}].
+\end{equation}
+
+\noindent Это неравенство означает, что функция одной вещественной переменной $\alpha$, равная $dJ[u_{0} + \alpha\eta]$, имеет при $\alpha = 0$ относительный минимум. Но тогда необходимо, чтобы  $\delta J[u_{0}, \eta] = 0$.
+
+\begin{warn}[Важно!]
+	Если функционал в некоторой точке достигает минимума, то в этой точке первая вариация функционала равна нулю. В этом заключается необходимое условие экстремума функционала.
+\end{warn}
+
+\subsection{Уравнение Эйлера. Связь между вариационной и краевой задачами}
+
+\begin{warn}[Базовая версия леммы Лагранжа.]
+	Если непрерывная функция $f$ на открытом интервале $(a, b)$ удовлетворяет равенству
+	
+\begin{displaymath}
+	\int_{a}^{b} f(x) \cdot h(x) \cdot dx = 0
+\end{displaymath}
+
+\noindent для всех финитных гладких функций $h$ на $(a, b)$, тогда $f$ является тождественным нулём.
+
+
+\end{warn}
+
+Рассмотрим основную лемму вариационного исчисления - лемму Лагранжа. Пусть $f(x, y)$ – функция, непрерывная в области $D$ с контуром $\Gamma$. Если непрерывной в области $D$ вместе со своими частными производными до $n$-го порядка включительно и обращающейся в нуль на границе $\Gamma(\eta(x, y)|_{\Gamma}  = 0)$, то $f(x, y) = 0$.
+Для примера, рассмотренного в главе \label{sub_section_minimum_conditions}, было получено в точке минимума функционала условие:
+
+\begin{equation}
+	\delta J[u, \eta] = \int_{a}^{b} [\Phi'_{u} - \frac{d}{dx}\Phi'_{u}] \alpha \eta dx = 0.
+\end{equation}
+
+\noindent Из леммы Лагранжа, можем записать
+
+\begin{equation}\label{euler_equation}
+	\Phi'_{u} - \frac{d}{dx}\Phi'_{u} = 0.
+\end{equation}
+
+\noindent Уравнение \ref{euler_equation} называют уравнением Эйлера. Если предположить существование непрерывной второй производной от $u(x)$, то уравнение можно записать в виде:
+
+\begin{equation}
+	\Phi''_{u'u'} \cdot u'' + \Phi''_{uu'} \cdot u' + \Phi''_{xu'} - Phi'_{u} = 0.
+\end{equation}
+
+Таким образом, условие минимума функционала при краевых условиях приводит к краевой задаче для уравнения Эйлера при тех же краевых условиях. Иными словами, существует тесная связь между вариационной задачей о минимуме функционала и краевой задачей для уравнения Эйлера для этого функционала.
+
+\begin{warn}[Важно!]
+	Решения уравнения Эйлера для функционала, удовлетворяющие краевым условиям, называют экстремалями функционала.
+\end{warn}
+
+\subsection{Пути решения вариационных задач}
+
+Один из путей решения вариационной задачи, т. е. задачи нахождения минимума некоторого функционала $J[u]$ при заданных краевых условиях, состоит в сведении этой задачи к краевой задаче для дифференциального уравнения при тех же краевых условиях, которое является уравнением Эйлера для этого функционала, с последующим решением этой задачи.
+
+Второй путь решения вариационной задачи состоит в применении прямых методов, которые позволяют приближённо найти функцию $u_{0}$, дающую минимум функционалу $J[u]$ и удовлетворяющую заданным краевым условиям.
+
+%----------------------------------------------------------------------------------------
+%	ГЛАВА 2
+%----------------------------------------------------------------------------------------
+
+\section{Прямые методы вариационного исчисления}
+
+Основным вопросом, возникающим в связи с любой вариационной проблемой, является вопрос о существовании решения. Классические методы вариационного исчисления приводят этот вопрос в первую очередь к вопросу о существовании решения дифференциального уравнения. При этом ищется решение не в окрестности какой-либо точки, а во всей области - при определённых краевых условиях (решение в целом). Доказательство существования таких решений теория дифференциальных уравнений даёт лишь в редких случаях. Это обстоятельство заставило искать другие подходы к вариационным проблемам и привело к созданию так называемых прямых методов.
+
+Прямые методы вариационного исчисления оказались полезными и для теории дифференциальных уравнений. Действительно, если некоторое дифференциальное уравнение можно рассматривать, как уравнение Эйлера для некоторого функционала и если каким-то приёмом установлено, что этот функционал имеет экстремум в классе достаточное число раз дифференцируемых функций, то тем самым доказано, что исходное дифференциальное уравнение имеет решение в целом при рассматриваемых краевых условиях. Так как прямой метод состоит в построении последовательности функций, сходящейся к искомой функции, то с помощью прямого метода не только устанавливается существование решения в целом, но и даётся некоторый способ для приближённого построения этого решения.
+
+\subsection{Метод Ритца}
+
+Одним из важнейших практических методов для построения минимизирующих последовательностей является метод, предложенный в 1908 году Вальтером Ритца. Состоит он в следующем. Вычисляется $n$-ое приближение к минимизируемой функции $u_{0}(x)$ в виде
+
+\begin{equation}
+	u_{n}(x) = \sum_{i=0}^n \alpha_{i}\varphi_{i}(x),
+\end{equation}
+
+\noindent Здесь значение функционала $J[u]$ рассматривается не на произвольных допустимых кривых данной вариационной задачи, а лишь на всевозможных линейных комбинациях с постоянными коэффициентами. Коэффициенты составлены из $n$ первых функций некоторой выбранной последовательности функций
+
+\begin{equation}
+	\varphi_{1}(x), \; \varphi_{2}(x), \; \varphi_{3}(x), \; \ldots, \; \varphi_{n}(x).
+\end{equation}
+
+\begin{info}
+	Данные функции часто называют координатными, базисными или финитными.
+\end{info}
+
+На линейных комбинациях функционал $J[u]$ превращается в функцию $\varphi(\alpha_{1}, \ldots, \alpha_{n})$ коэффициентов $\alpha_{1}, \ldots, \alpha_{n}$. Эти коэффициенты выбираются так, чтобы функция $\varphi(\alpha_{1}, \ldots, \alpha_{n})$ достигала экстремум. Следовательно, $\alpha_{1}, \ldots, \alpha_{n}$ должны быть определены из условий стационарности, то есть из системы
+
+\begin{equation}
+	\frac{d\varphi}{d\alpha_{i}} = 0, \; i = 1, \ldots, n.
+\end{equation}
+
+Получившаяся в результате последовательность функций сходится к минимуму по функционалу. Заканчивая процесс вычислений, получают значение $J[\widetilde{\varphi}]$, приближённо равное глобальному минимуму (при этом сама функция $\widetilde{\varphi}$ может сильно отличаться от оптимальной).
+
+На практике последовательность финитных функций ${\lbrace \varphi_{n} \rbrace}$ обычно строят с помощью системы многочленов $1$, $x$, $x^2$, $x^3$, $\ldots$, $x^n$ или системы тригонометрических функций $\sin (x)$, $\sin (2x)$, $\sin (3x)$, $\ldots$, $\sin (nx)$. Обе системы являются полными в пространстве непрерывных функций.
+
+\subsection{Практическое применение метода Ритца для решения вариационных задач}
+
+Имеем линейное дифференциальное уравнение 2-го порядка:
+
+\begin{equation}
+	\frac{d}{dx}(x^2 \frac{d \varphi}{dx}) - 2\varphi = -1 - \ln{x^2}.
+\end{equation}
+
+\noindent Граничные условия, которого:
+
+\begin{equation}
+	\text{A)} \; \varphi'(1) = 0, \; \varphi(2) = 1;
+\end{equation}
+
+\begin{equation}
+	\text{B)} \; \varphi(1) = 0, \; \varphi(2) + \varphi'(2) = 1.
+\end{equation}
+
+\noindent Решая исходное линейное дифференциальное уравнение
+
+\begin{equation}
+	x^2 \varphi'' + 2 x \varphi' - 2 \varphi = -1 - \ln{x^2}.
+\end{equation}
+
+\noindent получим общее решение дифференциального уравнения в виде:
+
+\begin{equation}
+	\phi(x) = \frac{C_{2}}{x^2} + C_{1}x + \frac{\ln{x^2}}{2} + 1
+\end{equation}
+
+\begin{equation}
+	\phi'(x) = - \frac{2C_{2}}{x^3} + C_{1} + \frac{1}{x}.
+\end{equation}
+
+Пользуясь граничными условиями составим системы уравнений из которых определим неизвестные коэффициенты и составим таблицу \ref{table_exact_coefficients}. 
+
+\begin{table}[!h]
+\centering
+\begin{tabular}{|c|c|c|}
+	\hline
+	Граничные условия &
+	Коэффициенты & 
+	Точные значения коэффициентов \\
+	\hline \hline
+
+\parbox[c]{3cm}{
+	\begin{displaymath}
+		\varphi'(1) = 0
+	\end{displaymath}
+	\begin{displaymath}
+		\varphi(2) = 1
+	\end{displaymath}
+} &
+
+\parbox[c]{3cm}{
+ 	\begin{displaymath}
+ 		C_{1} = - \frac{1}{17} - \frac{8}{17} \ln{2}
+ 	\end{displaymath}
+	\begin{displaymath} 	
+ 		C_{2} = \frac{8}{17} - \frac{4}{17} \ln{2}
+ 	\end{displaymath}
+ 	} & 
+ 	
+\parbox[c]{4.07cm}{
+ 	\begin{displaymath}
+ 		C_{1} = -0.385010437910562 
+ 	\end{displaymath}
+ 	\begin{displaymath}
+ 		C_{2} = 0.307494781044718
+ 	\end{displaymath}
+ 	}\\	\hline
+	
+\parbox[c]{3cm}{
+	\begin{displaymath}
+		\varphi(1) = 0
+	\end{displaymath}
+	\begin{displaymath}
+		\varphi(2) + \varphi'(2) = 1
+	\end{displaymath}
+	} &
+
+\parbox[c]{3cm}{
+ 	\begin{displaymath}
+ 		C_{1} = - \frac{1}{3} \ln{2} - \frac{1}{6} 
+ 	\end{displaymath}
+	\begin{displaymath} 	
+ 		C_{2} = \frac{1}{3} \ln{2} - \frac{5}{6}
+ 	\end{displaymath}
+ 	} & 
+ 	
+\parbox[c]{4.07cm}{
+ 	\begin{displaymath}
+ 		C_{1} = -0.397715726853315
+ 	\end{displaymath}
+ 	\begin{displaymath}
+ 		C_{2} = -0.602284273146684
+ 	\end{displaymath}
+ 	}\\	\hline
+\end{tabular}
+\caption{Точные коэффициенты}
+\label{table_exact_coefficients}
+\end{table}
+
+\noindent Исходные функции принимают вид
+
+\begin{equation}
+	\text{A)} \; \phi(x) = \frac{0.307494781044718}{x^2} - 0.385010437910562 x + \frac{\ln{x^2}}{2} + 1,
+\end{equation}
+
+\begin{equation}
+	\text{B)} \; \phi(x) = - \frac{0.602284273146684}{x^2} - 0.397715726853315 x + \frac{\ln{x^2}}{2} + 1.
+\end{equation}
+
+Данные кривые будут единственными кривыми возможного экстремума функционала с данными граничными условиями (см. приложение \ref{Appendix_A}). 
+
+
+
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLES
+%----------------------------------------------------------------------------------------
+
+
+% Math equation/formula
+\begin{equation}
+	I = \int_{a}^{b} f(x) \; dx.
+\end{equation}
+
+% File contents
+\begin{file}[hello.py]
+\begin{lstlisting}[language=Python]
+#! /usr/bin/python
+
+import sys
+sys.stdout.write("Hello World!\n")
+\end{lstlisting}
+\end{file}
+
+% Command-line "screenshot"
+\begin{commandline}
+	\begin{verbatim}
+		$ chmod +x hello.py
+		$ ./hello.py
+
+		Hello World!
+	\end{verbatim}
+\end{commandline}
+
+% Warning text, with a custom title
+\begin{warn}[Notice:]
+  In congue risus leo, in gravida enim viverra id. Donec eros mauris, bibendum vel dui at, tempor commodo augue. In vel lobortis lacus. Nam ornare ullamcorper mauris vel molestie. Maecenas vehicula ornare turpis, vitae fringilla orci consectetur vel. Nam pulvinar justo nec neque egestas tristique. Donec ac dolor at libero congue varius sed vitae lectus. Donec et tristique nulla, sit amet scelerisque orci. Maecenas a vestibulum lectus, vitae gravida nulla. Proin eget volutpat orci. Morbi eu aliquet turpis. Vivamus molestie urna quis tempor tristique. Proin hendrerit sem nec tempor sollicitudin.
+\end{warn}
 
 % Numbered question, with subquestions in an enumerate environment
 \begin{question}
@@ -89,12 +417,6 @@ In hac habitasse platea dictumst. Curabitur mattis elit sit amet justo luctus ve
 		\item Do something else.
 	\end{enumerate}
 \end{question}
-	
-%------------------------------------------------
-
-\subsection{Algorithmic issues}
-
-In malesuada ullamcorper urna, sed dapibus diam sollicitudin non. Donec elit odio, accumsan ac nisl a, tempor imperdiet eros. Donec porta tortor eu risus consequat, a pharetra tortor tristique. Morbi sit amet laoreet erat. Morbi et luctus diam, quis porta ipsum. Quisque libero dolor, suscipit id facilisis eget, sodales volutpat dolor. Nullam vulputate interdum aliquam. Mauris id convallis erat, ut vehicula neque. Sed auctor nibh et elit fringilla, nec ultricies dui sollicitudin. Vestibulum vestibulum luctus metus venenatis facilisis. Suspendisse iaculis augue at vehicula ornare. Sed vel eros ut velit fermentum porttitor sed sed massa. Fusce venenatis, metus a rutrum sagittis, enim ex maximus velit, id semper nisi velit eu purus.
 
 \begin{center}
 	\begin{minipage}{0.5\linewidth} % Adjust the minipage width to accomodate for the length of algorithm lines
@@ -115,53 +437,10 @@ In malesuada ullamcorper urna, sed dapibus diam sollicitudin non. Donec elit odi
 	\end{minipage}
 \end{center}
 
-Fusce varius orci ac magna dapibus porttitor. In tempor leo a neque bibendum sollicitudin. Nulla pretium fermentum nisi, eget sodales magna facilisis eu. Praesent aliquet nulla ut bibendum lacinia. Donec vel mauris vulputate, commodo ligula ut, egestas orci. Suspendisse commodo odio sed hendrerit lobortis. Donec finibus eros erat, vel ornare enim mattis et.
-
 % Numbered question, with an optional title
 \begin{question}[\itshape (with optional title)]
 	In congue risus leo, in gravida enim viverra id. Donec eros mauris, bibendum vel dui at, tempor commodo augue. In vel lobortis lacus. Nam ornare ullamcorper mauris vel molestie. Maecenas vehicula ornare turpis, vitae fringilla orci consectetur vel. Nam pulvinar justo nec neque egestas tristique. Donec ac dolor at libero congue varius sed vitae lectus. Donec et tristique nulla, sit amet scelerisque orci. Maecenas a vestibulum lectus, vitae gravida nulla. Proin eget volutpat orci. Morbi eu aliquet turpis. Vivamus molestie urna quis tempor tristique. Proin hendrerit sem nec tempor sollicitudin.
 \end{question}
-
-Mauris interdum porttitor fringilla. Proin tincidunt sodales leo at ornare. Donec tempus magna non mauris gravida luctus. Cras vitae arcu vitae mauris eleifend scelerisque. Nam sem sapien, vulputate nec felis eu, blandit convallis risus. Pellentesque sollicitudin venenatis tincidunt. In et ipsum libero. Nullam tempor ligula a massa convallis pellentesque.
-
-%----------------------------------------------------------------------------------------
-%	PROBLEM 2
-%----------------------------------------------------------------------------------------
-
-\section{Implementation}
-
-Proin lobortis efficitur dictum. Pellentesque vitae pharetra eros, quis dignissim magna. Sed tellus leo, semper non vestibulum vel, tincidunt eu mi. Aenean pretium ut velit sed facilisis. Ut placerat urna facilisis dolor suscipit vehicula. Ut ut auctor nunc. Nulla non massa eros. Proin rhoncus arcu odio, eu lobortis metus sollicitudin eu. Duis maximus ex dui, id bibendum diam dignissim id. Aliquam quis lorem lorem. Phasellus sagittis aliquet dolor, vulputate cursus dolor convallis vel. Suspendisse eu tellus feugiat, bibendum lectus quis, fermentum nunc. Nunc euismod condimentum magna nec bibendum. Curabitur elementum nibh eu sem cursus, eu aliquam leo rutrum. Sed bibendum augue sit amet pharetra ullamcorper. Aenean congue sit amet tortor vitae feugiat.
-
-In congue risus leo, in gravida enim viverra id. Donec eros mauris, bibendum vel dui at, tempor commodo augue. In vel lobortis lacus. Nam ornare ullamcorper mauris vel molestie. Maecenas vehicula ornare turpis, vitae fringilla orci consectetur vel. Nam pulvinar justo nec neque egestas tristique. Donec ac dolor at libero congue varius sed vitae lectus. Donec et tristique nulla, sit amet scelerisque orci. Maecenas a vestibulum lectus, vitae gravida nulla. Proin eget volutpat orci. Morbi eu aliquet turpis. Vivamus molestie urna quis tempor tristique. Proin hendrerit sem nec tempor sollicitudin.
-
-% File contents
-\begin{file}[hello.py]
-\begin{lstlisting}[language=Python]
-#! /usr/bin/python
-
-import sys
-sys.stdout.write("Hello World!\n")
-\end{lstlisting}
-\end{file}
-
-Fusce eleifend porttitor arcu, id accumsan elit pharetra eget. Mauris luctus velit sit amet est sodales rhoncus. Donec cursus suscipit justo, sed tristique ipsum fermentum nec. Ut tortor ex, ullamcorper varius congue in, efficitur a tellus. Vivamus ut rutrum nisi. Phasellus sit amet enim efficitur, aliquam nulla id, lacinia mauris. Quisque viverra libero ac magna maximus efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum mollis eros in tellus fermentum, vitae tristique justo finibus. Sed quis vehicula nibh. Etiam nulla justo, pellentesque id sapien at, semper aliquam arcu. Integer at commodo arcu. Quisque dapibus ut lacus eget vulputate.
-
-% Command-line "screenshot"
-\begin{commandline}
-	\begin{verbatim}
-		$ chmod +x hello.py
-		$ ./hello.py
-
-		Hello World!
-	\end{verbatim}
-\end{commandline}
-
-Vestibulum sodales orci a nisi interdum tristique. In dictum vehicula dui, eget bibendum purus elementum eu. Pellentesque lobortis mattis mauris, non feugiat dolor vulputate a. Cras porttitor dapibus lacus at pulvinar. Praesent eu nunc et libero porttitor malesuada tempus quis massa. Aenean cursus ipsum a velit ultricies sagittis. Sed non leo ullamcorper, suscipit massa ut, pulvinar erat. Aliquam erat volutpat. Nulla non lacus vitae mi placerat tincidunt et ac diam. Aliquam tincidunt augue sem, ut vestibulum est volutpat eget. Suspendisse potenti. Integer condimentum, risus nec maximus elementum, lacus purus porta arcu, at ultrices diam nisl eget urna. Curabitur sollicitudin diam quis sollicitudin varius. Ut porta erat ornare laoreet euismod. In tincidunt purus dui, nec egestas dui convallis non. In vestibulum ipsum in dictum scelerisque.
-
-% Warning text, with a custom title
-\begin{warn}[Notice:]
-  In congue risus leo, in gravida enim viverra id. Donec eros mauris, bibendum vel dui at, tempor commodo augue. In vel lobortis lacus. Nam ornare ullamcorper mauris vel molestie. Maecenas vehicula ornare turpis, vitae fringilla orci consectetur vel. Nam pulvinar justo nec neque egestas tristique. Donec ac dolor at libero congue varius sed vitae lectus. Donec et tristique nulla, sit amet scelerisque orci. Maecenas a vestibulum lectus, vitae gravida nulla. Proin eget volutpat orci. Morbi eu aliquet turpis. Vivamus molestie urna quis tempor tristique. Proin hendrerit sem nec tempor sollicitudin.
-\end{warn}
 
 %----------------------------------------------------------------------------------------
 
