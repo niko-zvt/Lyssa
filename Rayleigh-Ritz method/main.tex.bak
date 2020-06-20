@@ -61,7 +61,7 @@
 %	ГЛАВА 1
 %----------------------------------------------------------------------------------------
 
-\section{Вариационное исчисление} % Numbered section
+\section{Вариационное исчисление}
 
 \subsection{Понятие функционала}
 
@@ -357,14 +357,14 @@ sub_section_minimum_conditions}
 \noindent Исходные функции принимают вид
 
 \begin{equation}
-	\text{A)} \; \phi(x) = \frac{0.307494781044718}{x^2} - 0.385010437910562 x + \frac{\ln{x^2}}{2} + 1,
+	\text{A)} \; \phi_{\ast}^{[\infty]}(x) = \frac{0.307494781044718}{x^2} - 0.385010437910562 x + \frac{\ln{x^2}}{2} + 1,
 \end{equation}
 
 \begin{equation}
-	\text{B)} \; \phi(x) = - \frac{0.602284273146684}{x^2} - 0.397715726853315 x + \frac{\ln{x^2}}{2} + 1.
+	\text{B)} \; \phi_{\ast}^{[\infty]}(x) = - \frac{0.602284273146684}{x^2} - 0.397715726853315 x + \frac{\ln{x^2}}{2} + 1.
 \end{equation}
 
-Данные кривые будут единственными кривыми возможного экстремума функционала с данными граничными условиями (см. приложение \ref{Appendix_A}). 
+Данные кривые будут единственными кривыми возможного экстремума функционала с данными граничными условиями (см. приложение \ref{appendix_a}). 
 
 \subsubsection{Решение краевой задачи Дирихле (1-го рода)}
 
@@ -532,11 +532,211 @@ sub_section_minimum_conditions}
 	\alpha_{3} = \frac{8645}{584} - \frac{1568}{73} \ln{2} = -0.085339439972523.
 \end{displaymath}
 
-Таким образом, приближенное решение данной задачи имеет вид (см. приложение \ref{Appendix_B})
+Таким образом, приближенное решение данной задачи имеет вид (см. приложение \ref{appendix_b})
 
 \begin{equation}	
-	\overline{\phi}^{[3]} = (-0.040817774913557+0.204031451556182x -0.085339439972523906387x^2)(x-2) + 1.
+	\phi_{\ast}^{[3]} = (-0.040817774913557+0.204031451556182x -0.085339439972523906387x^2)(x-2) + 1.
 \end{equation}
+
+\noindent Процесс сходимости и точность решения отражены в таблице \ref{table_process_of_convergence_rank_2}
+
+\begin{table}[!h]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+	\hline
+	$x$ & 1.0 & 1.25 & 1.5 & 1.75 & 2.0 & $J[\ldots]$ & $\Vert \phi_{\ast}^{[m]} - \phi_{\ast}^{[\infty]} \Vert$ \\
+	\hline \hline
+
+	$\phi_{\ast}^{[2]}(x)$ & 0.919486 & 0.943589 & 0.965042 & 0.983846 & 1.0 & –0.7813694156 & 0.02737674162 \\	\hline
+	$\phi_{\ast}^{[3]}(x)$ & 0.922126 & 0.939341 & 0.693392 & 0.986279 & 1.0 & –0.7817609074 & 0.00946810176 \\	\hline
+	$\phi_{\ast}^{[4]}(x)$ & 
+0.922457 & 0.938455 & 0.964549 & 0.986425 & 1.0 & –0.7818337295 & 0.00262807040 \\	\hline
+	$\phi_{\ast}^{[\infty]}(x)$ & 0.922484 & 0.938677 & 0.964613 & 0.986253 & 1.0 & –0.7818408301 & 0 \\	\hline
+
+\end{tabular}
+\caption{Сходимость и точность решения}
+\label{table_process_of_convergence_rank_2}
+\end{table}
+
+\subsubsection{Решение смешанной краевой задачи (3-го рода)}
+
+Имеем линейное дифференциальное уравнение 2-го порядка:
+
+\begin{equation}\label{equation_rang_2}
+	\frac{d}{dx}(x^2 \frac{d \varphi}{dx}) - 2\varphi = -1 - \ln{x^2}.
+\end{equation}
+
+\noindent Граничные условия, которого:
+
+\begin{equation}
+	\varphi(1) = 0, \; \varphi(2) + \varphi'(2) = 1.
+\end{equation}
+
+Исходная задача эквивалентна нахождению функции $\varphi(x)$, удовлетворяющей граничным (краевым) условиям и минимизирующую функционал
+
+\begin{equation}
+	J[\varphi] = \int_{a}^{b} f(x, \varphi, \varphi')dx + g(\varphi(a), \varphi(b)),
+\end{equation}
+
+\noindent где $g(\varphi(a), \varphi(b))$ – заданная функция, имеющая непрерывные производные по $\varphi(a)$ и $\varphi(b)$.
+
+Для граничных условий $\varphi(1) = 0$, $\varphi(2) + \varphi'(2) = 1$ задача эквивалентна частному случаю смешанной краевой задачи (3-го рода). Общий вид которой:
+
+\begin{equation}
+	J[\varphi] = \frac{1}{2} \int_{a}^{b} [p(x)\varphi'^{2} + \varphi^2 - 2f(x)\varphi]dx - \frac{1}{2}\beta_{1}p(a)\varphi^2(a) + \gamma_{1}p(a)\varphi(a) + \frac{1}{2}\beta_{2}p(b)\varphi^2(b) - \gamma_{2}p(b)\varphi(b).
+\end{equation}
+
+\noindent Условия экстремума:
+
+\begin{equation}
+	\frac{d}{dx}(p(x)\frac{d\varphi}{dx})-q(x)\varphi = -f(x)
+\end{equation}
+
+\noindent и граничные условия $\varphi'(a) + \beta_{1}\varphi(a) = \gamma_{1}$, $\varphi'(b) + \beta_{2}\varphi(b) = \gamma_{2}$.
+
+Для того чтобы функционал достигал на функции экстремума, необходимо, чтобы эта функция удовлетворяла уравнению Эйлера и условиям трансверсальности. Функция, которую в дальнейшем необходимо будет подставить в функционал, должна иметь вид
+
+\begin{equation}\label{equation_func_rank_3}
+	f(x, \varphi, \varphi') = \frac{x^2}{2}\varphi'^2 - \varphi^2 + (1 + \ln(x^2))\varphi,
+\end{equation}
+
+\begin{equation}
+	g(\varphi(b)) = 2\varphi^2(2) - 4\varphi(2).
+\end{equation}
+
+\noindent Проверим, удовлетворяет ли функция уравнению Эйлера и условиям трансверсальности.
+
+Во-первых, подставим функцию (\ref{equation_func_rank_3}) в общий вид уравнения Эйлера (\ref{euler_equation}):
+
+\begin{equation}
+	\frac{\partial f}{\partial \varphi} - \frac{d}{dx} \frac{\partial f}{\partial \varphi'} = 0;
+\end{equation}
+
+\begin{equation}
+	2\varphi - (1 + \ln(x^2)) - \frac{d}{dx}(x^2 \varphi') = 0;
+\end{equation}
+
+\begin{equation}
+	\frac{d}{dx}(x^2 \varphi') - 2\varphi = -1 - \ln(x^2).
+\end{equation}
+
+Во-вторых, проверим условия трансверсальности:
+
+\begin{equation}
+	[\frac{\partial f}{\partial \varphi'} + \frac{\partial g}{\partial \varphi(b)}]_{x=b} = 0;
+\end{equation}
+
+\begin{equation}
+	4\varphi' + 4\varphi - 4 = 0;
+\end{equation}
+
+\begin{equation}
+	\varphi'(2) + \varphi(2) = 1.
+\end{equation}
+
+Запишем исходную задачу в вариационной формулировке:
+
+\begin{equation}
+	J[\varphi] = \int_{1}^{2} [\frac{x^2}{2}\varphi'^2 + \varphi^2 - (1 + \ln{x^2}\varphi)]dx + 2\varphi^2(2) - 4\varphi(2).
+\end{equation}
+
+Имеем одну фиксированную точку ($x = 2$), а другую ($x = 1$) – подвижную. Для первой должно выполняться условие $\varphi(1) = 0$, а для второй точки – условие $\varphi(2) + \varphi'(2) = 1$ как условие трансверсальности. Последнее будет выполняться автоматически, реализуя условия минимума функционала. Поэтому в соответствии с (\ref{equation_solve_var_rank_2}), в данном случае $\psi(x) = 0$, а в качестве $\lbrace N_{i} \rbrace$ - любые линейно независимые функции, равные нулю при $x = 1$.
+
+\begin{equation}
+	\varphi(x) \approx \varphi_{n}(x) = (\alpha_{1} + \alpha_{2}x + \alpha_{3}x^2 + \cdots + \alpha_{n}x^{n-1})(x-2)+1.
+\end{equation}
+
+\noindent Положим $n = 3$
+
+\begin{equation}
+	\varphi^{[3]}(x) = (\alpha_{1} + \alpha_{2}x + \alpha_{3}x^2)(x-2)+1.
+\end{equation}
+
+\noindent Подставим функцию $\varphi^{[3]}(x)$ в функционал $J[\varphi]$ (\ref{equation_functional_rank_2}), интегрируя, получим функцию $\Phi(\alpha_{1}, \alpha_{2}, \alpha_{3})$, зависящую от неизвестных коэффициентов, но уже не зависящую от $x$.
+
+\begin{displaymath}
+	\Phi(\alpha_{1}, \alpha_{2}, \alpha_{3}) = \frac{19}{3}\alpha_{1}\alpha_{2} - \frac{79}{9}\alpha_{2} - \frac{1231}{72}\alpha_{3} - 5\alpha_{1} + \frac{79}{6}\alpha_{1}\alpha_{3} + \frac{154}{5}\alpha_{2}\alpha_{3} + 2(\alpha_{1} + 2 \alpha_{2} + 4\alpha_{3})^2 +
+\end{displaymath}
+	
+\begin{equation}	
+	 + \frac{3}{2}\alpha_{1}^{2} +  \frac{71}{10}\alpha_{2}^{2} + \frac{2407}{70}\alpha_{3}^{2} + \alpha_{2} \ln{\frac{2^{\frac{2}{3}}}{4}} - \alpha_{3} \ln{4 \cdot 2^{\frac{2}{3}}}.
+\end{equation}
+
+\noindent Решим задачу минимизации функции трех переменных для $\Phi(\alpha_{1}, \alpha_{2}, \alpha_{3})$
+
+\begin{equation}
+	\frac{\partial \Phi}{\partial \alpha_{1}} = 0, \;
+	\frac{\partial \Phi}{\partial \alpha_{2}} = 0, \;
+	\frac{\partial \Phi}{\partial \alpha_{3}} = 0.
+\end{equation}
+
+\noindent Получим систему из трёх уравнений с тремя неизвестными
+
+\begin{equation}
+	\begin{cases}
+		7\alpha_{1} + \frac{43}{3}\alpha_{2} + \frac{175}{6}\alpha_{3} - 5 = 0 \\
+		\\
+		\frac{43}{3}\alpha_{1} + \frac{151}{5}\alpha_{2} + \frac{314}{5}\alpha_{3} + \ln{\frac{1}{4} \cdot 2^{\frac{2}{3}}} - \frac{79}{9} = 0 \\
+		\\
+		\frac{175}{6}\alpha_{1} + \frac{314}{5}\alpha_{2} + \frac{4647}{35}\alpha_{3} + \log{4 \cdot 2^{\frac{2}{3}}} - \frac{1231}{72} = 0
+	\end{cases}
+\end{equation}
+
+\noindent Решая данную систему, мы находим неизвестные коэффициенты
+
+\begin{displaymath}
+	$\alpha_{1} = \frac{493099}{9876} - \frac{55088}{823}\ln{2} = 3.532796416339083$
+\end{displaymath}
+
+\begin{equation}
+	\alpha_{2} = -\frac{173591}{3292} + \frac{59836}{823}\ln{2} = -2.336081778876199
+\end{equation}
+
+\begin{displaymath}
+	$\alpha_{3} = \frac{11606}{823} - \frac{16184}{823}\ln{2} = 0.471574762840638$
+\end{displaymath}
+
+\noindent Таким образом, приближенное решение данной задачи имеет вид (см. приложение \ref{appendix_c})
+
+\begin{equation}
+	\varphi_{\ast}^{[3]}(x) = (3.532796416339083 - 2.336081778876199x + 0.471574762840638 x^2)(x-1).
+\end{equation}
+
+Процесс сходимости и точность решения отражены в таблице \ref{table_process_of_convergence_rank_3}.
+
+\begin{table}[!h]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+	\hline
+	$x$ & 1.0 & 1.25 & 1.5 & 1.75 & 2.0 & $J[\ldots]$ & $\Vert \phi_{\ast}^{[m]} - \phi_{\ast}^{[\infty]} \Vert$ \\
+	\hline \hline
+
+	$\phi_{\ast}^{[2]}(x)$ & 0 & 0.304225 & 0.529682 & 0.676371 & 0.744292 & –1.954630663 & 0.02056217267 \\	\hline
+	$\phi_{\ast}^{[3]}(x)$ & 0 & 0.337382 & 0.544858 & 0.666638 & 0.746932 & –1.966825559 & 0.00331818248 \\	\hline
+	$\phi_{\ast}^{[4]}(x)$ & 
+0 & 0.341084 & 0.541376 & 0.666441 & 0.747131 & –1.967792510 & 0.00060124038 \\	\hline
+	$\phi_{\ast}^{[\infty]}(x)$ & 0 & 0.340536 & 0.541209 & 0.666949 & 0.747144 & –1.967867957 & 0 \\	\hline
+
+\end{tabular}
+\caption{Сходимость и точность решения}
+\label{table_process_of_convergence_rank_3}
+\end{table}
+
+\section*{Заключение}
+
+Современному инженеру часто приходится иметь дело с задачами, которые требуют от него хорошей математической подготовки и твёрдых навыков в применении разнообразных математических методов. Расширение математического кругозора инженеров немало способствует новым достижениям техники.
+
+Вариационное исчисление – один из наиболее важных разделов классического математического анализа для приложений. Вариационное исчисление является быстро развивающимся разделом математического анализа, охватить который с достаточной полнотой в монографии небольшого объёма невозможно. Данному разделу математического анализа посвящено большое количество книг.
+
+
+
+
+
+
+
+
+
+
 
 
 \newpage

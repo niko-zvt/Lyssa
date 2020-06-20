@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.5.26)  20 JUN 2020 00:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.5.26)  20 JUN 2020 15:13
 entering extended mode
 **./main.tex
 (main.tex
@@ -1153,6 +1153,10 @@ r-TLF.
 )
 LaTeX Font Info:    Font shape `T2A/XCharter-TLF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 6.
+
+
+LaTeX Warning: Label `equation_rang_2' multiply defined.
+
 )
 \openout1 = `main.aux'.
 
@@ -1175,8 +1179,7 @@ LaTeX Font Info:    ... okay on input line 38.
 LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 38.
 LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 3
 8.
-
-("F:\Other Program Files\Latex\MikTeX\tex/latex/ly1\ly1ptm.fd"
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/ly1\ly1ptm.fd"
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
 LaTeX Font Info:    ... okay on input line 38.
@@ -1295,51 +1298,58 @@ LaTeX Font Info:    Font shape `T2A/XCharter-TLF/m/n' will be
 (Font)              scaled to size 5.0pt on input line 134.
  [3] [4] [5]
 
-LaTeX Warning: Reference `Appendix_A' on page 6 undefined on input line 367.
+LaTeX Warning: Reference `appendix_a' on page 6 undefined on input line 367.
 
 [6] [7] [8]
 
-LaTeX Warning: Reference `Appendix_B' on page 9 undefined on input line 535.
+LaTeX Warning: Reference `appendix_b' on page 9 undefined on input line 535.
 
-[9] ("F:\Other Program Files\Latex\MikTeX\tex/latex/listings\lstlang1.sty"
+[9] [10]
+
+LaTeX Warning: Reference `appendix_c' on page 11 undefined on input line 699.
+
+[11] ("F:\Other Program Files\Latex\MikTeX\tex/latex/listings\lstlang1.sty"
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 LaTeX Font Info:    Font shape `T2A/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `T2A/cmtt/m/n' tried instead on input line 559.
+(Font)              Font shape `T2A/cmtt/m/n' tried instead on input line 759.
 LaTeX Font Info:    Trying to load font information for T2A+cmss on input line 
-572.
+772.
 
 ("F:\Other Program Files\Latex\MikTeX\tex/latex/cyrillic\t2acmss.fd"
 File: t2acmss.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-Overfull \hbox (5.11531pt too wide) in paragraph at lines 575--577
+Overfull \hbox (5.11531pt too wide) in paragraph at lines 775--777
 \T2A/XCharter-TLF/m/n/10 aliquet turpis. Vivamus molestie urna quis tempor tris
 tique. Proin hendrerit sem nec tempor sollicitudin.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 575--577
+Underfull \hbox (badness 10000) in paragraph at lines 775--777
 
  []
 
 LaTeX Font Info:    Font shape `T2A/XCharter-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 600.
+(Font)              scaled to size 10.0pt on input line 800.
 
-Overfull \hbox (2.56082pt too wide) in paragraph at lines 612--613
+Overfull \hbox (2.56082pt too wide) in paragraph at lines 812--813
 \T2A/XCharter-TLF/m/n/10 commodo augue. In vel lobortis lacus. Nam ornare ullam
 corper mauris vel molestie. Maecenas vehicula
  []
 
-[10] [11] (main.aux)
+[12] [13] (main.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 20803 strings out of 480795
- 383963 string characters out of 2901632
- 823456 words of memory out of 3000000
- 36365 multiletter control sequences out of 15000+200000
+ 20807 strings out of 480795
+ 384071 string characters out of 2901632
+ 822570 words of memory out of 3000000
+ 36369 multiletter control sequences out of 15000+200000
  572462 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  76i,12n,74p,2282b,1477s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1361,9 +1371,9 @@ ts/type1/public/amsfonts/cm/cmr7.pfb><F:/Other Program Files/Latex/MikTeX/fonts
 /type1/public/amsfonts/cm/cmsy10.pfb><F:/Other Program Files/Latex/MikTeX/fonts
 /type1/public/amsfonts/cm/cmsy5.pfb><F:/Other Program Files/Latex/MikTeX/fonts/
 type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on main.pdf (11 pages, 339965 bytes).
+Output written on main.pdf (13 pages, 353022 bytes).
 PDF statistics:
- 177 PDF objects out of 1000 (max. 8388607)
+ 184 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
