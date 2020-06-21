@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.5.26)  20 JUN 2020 15:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.5.26)  21 JUN 2020 18:19
 entering extended mode
 **./main.tex
 (main.tex
@@ -1155,6 +1155,9 @@ LaTeX Font Info:    Font shape `T2A/XCharter-TLF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 6.
 
 
+LaTeX Warning: Label `sub_section_minimum_conditions' multiply defined.
+
+
 LaTeX Warning: Label `equation_rang_2' multiply defined.
 
 )
@@ -1283,61 +1286,62 @@ Overfull \hbox (8.27834pt too wide) in paragraph at lines 54--55
 ис-ле-ния внес-ли Лео-нард Эй-лер и Жо-зеф Лагранж.
  []
 
-LaTeX Font Info:    Font shape `T2A/XCharter-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 66.
 [1
 
 {C:/Users/User/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+LaTeX Font Info:    Font shape `T2A/XCharter-TLF/b/n' will be
+(Font)              scaled to size 12.0pt on input line 68.
 <images/img_001.png, id=11, 266.49562pt x 215.30438pt>
 File: images/img_001.png Graphic file (type png)
 <use images/img_001.png>
-Package pdftex.def Info: images/img_001.png  used on input line 103.
+Package pdftex.def Info: images/img_001.png  used on input line 105.
 (pdftex.def)             Requested size: 140.87196pt x 113.81102pt.
  [2 <./images/img_001.png>]
 LaTeX Font Info:    Font shape `T2A/XCharter-TLF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 134.
- [3] [4] [5]
+(Font)              scaled to size 5.0pt on input line 138.
+ [3] [4] [5] [6]
 
-LaTeX Warning: Reference `appendix_a' on page 6 undefined on input line 367.
+LaTeX Warning: Reference `appendix_a' on page 7 undefined on input line 378.
 
-[6] [7] [8]
+[7] [8]
 
-LaTeX Warning: Reference `appendix_b' on page 9 undefined on input line 535.
+LaTeX Warning: Reference `appendix_b' on page 9 undefined on input line 546.
 
 [9] [10]
 
-LaTeX Warning: Reference `appendix_c' on page 11 undefined on input line 699.
+LaTeX Warning: Reference `appendix_c' on page 11 undefined on input line 710.
 
-[11] ("F:\Other Program Files\Latex\MikTeX\tex/latex/listings\lstlang1.sty"
+[11] [12] [13]
+("F:\Other Program Files\Latex\MikTeX\tex/latex/listings\lstlang1.sty"
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 LaTeX Font Info:    Font shape `T2A/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `T2A/cmtt/m/n' tried instead on input line 759.
+(Font)              Font shape `T2A/cmtt/m/n' tried instead on input line 774.
 LaTeX Font Info:    Trying to load font information for T2A+cmss on input line 
-772.
+787.
 
 ("F:\Other Program Files\Latex\MikTeX\tex/latex/cyrillic\t2acmss.fd"
 File: t2acmss.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-Overfull \hbox (5.11531pt too wide) in paragraph at lines 775--777
+Overfull \hbox (5.11531pt too wide) in paragraph at lines 790--792
 \T2A/XCharter-TLF/m/n/10 aliquet turpis. Vivamus molestie urna quis tempor tris
 tique. Proin hendrerit sem nec tempor sollicitudin.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 775--777
+Underfull \hbox (badness 10000) in paragraph at lines 790--792
 
  []
 
 LaTeX Font Info:    Font shape `T2A/XCharter-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 800.
+(Font)              scaled to size 10.0pt on input line 815.
 
-Overfull \hbox (2.56082pt too wide) in paragraph at lines 812--813
+Overfull \hbox (2.56082pt too wide) in paragraph at lines 827--828
 \T2A/XCharter-TLF/m/n/10 commodo augue. In vel lobortis lacus. Nam ornare ullam
 corper mauris vel molestie. Maecenas vehicula
  []
 
-[12] [13] (main.aux)
+[14] [15] (main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1346,10 +1350,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 20807 strings out of 480795
- 384071 string characters out of 2901632
- 822570 words of memory out of 3000000
- 36369 multiletter control sequences out of 15000+200000
+ 20806 strings out of 480795
+ 384038 string characters out of 2901632
+ 823561 words of memory out of 3000000
+ 36368 multiletter control sequences out of 15000+200000
  572462 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  76i,12n,74p,2282b,1477s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1371,9 +1375,9 @@ ts/type1/public/amsfonts/cm/cmr7.pfb><F:/Other Program Files/Latex/MikTeX/fonts
 /type1/public/amsfonts/cm/cmsy10.pfb><F:/Other Program Files/Latex/MikTeX/fonts
 /type1/public/amsfonts/cm/cmsy5.pfb><F:/Other Program Files/Latex/MikTeX/fonts/
 type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on main.pdf (13 pages, 353022 bytes).
+Output written on main.pdf (15 pages, 354097 bytes).
 PDF statistics:
- 184 PDF objects out of 1000 (max. 8388607)
+ 190 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

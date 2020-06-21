@@ -61,6 +61,8 @@
 %	ГЛАВА 1
 %----------------------------------------------------------------------------------------
 
+\newpage
+
 \section{Вариационное исчисление}
 
 \subsection{Понятие функционала}
@@ -69,29 +71,29 @@
 
 Если же функции $y(x)$ ставится в соответствие по определённому правилу или закону число $J$, то говорят, что задан функционал $J = J[y]$. Примером функционала может быть определённый интеграл от функции $y(x)$ или от некоторого выражения, зависящего от $y(x)$,
 
-\begin{equation}
+\begin{displaymath}
 	J[y] = \int_{a}^{b} y(x) \; dx,
-\end{equation}
+\end{displaymath}
 
-\begin{equation}
+\begin{displaymath}
 	J[y] = \int_{a}^{b} [y''(x) + P(x)y'(x) + q(x)y(x)] \;  dx.
-\end{equation}
+\end{displaymath}
 
 Если теперь функции $y(x)$ ставится в соответствие по определённому правилу или закону вновь функция $z(x)$, то говорят, что задан оператор $z = L(y)$ или $z = Ly$. Примерами дифференциальных операторов могут служить:
 
-\begin{equation}
+\begin{displaymath}
 	Ly = y'' + P(x)y' + q(x)y,
-\end{equation}
+\end{displaymath}
 
-\begin{equation}
+\begin{displaymath}
     Lu = \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2}.
-\end{equation}
+\end{displaymath}
 
 Дадим более строгое определение функционала. Пусть $A$ – множество элементов произвольной природы, и пусть каждому элементу $u \in A$ приведено в соответствие одно и только одно число $J[u]$. В этом случае говорят, что на множестве $A$ задан функционал $J$. Множество $A$ называется областью определения функционала $J$ и обозначается через $D(J)$; число $J[u]$ называется значением функционала $J$ на элементе $u$. Функционал $J$ называется вещественным, если все его значения вещественны. Функционал $J$ называется линейным, если его область определения есть линейное множество и если
 
-\begin{equation}
+\begin{displaymath}
     J[\alpha u + \beta v] = \alpha \cdot J[u] + \beta \cdot J[v].
-\end{equation}
+\end{displaymath}
 
 %------------------------------------------------
 
@@ -107,21 +109,21 @@
 
 Пусть уравнение кривой $AB$ есть $y = u(x)$. Рассмотрим некоторый момент времени $t$, и пусть в этот момент движущаяся точка находится на расстоянии $y$ от оси $x$. Тогда $\upsilon = \sqrt{2g\upsilon}$ , где $\upsilon$ – скорость движущейся точки, $g$ – ускорение свободного падения. В то же время:
 
-\begin{equation}
+\begin{displaymath}
     \upsilon = \frac{dS}{dt} = \sqrt{1 + u'^2} \frac{dx}{dt},
-\end{equation}
+\end{displaymath}
 
 \noindent отсюда следует, что
 
-\begin{equation}
+\begin{displaymath}
     dt = \sqrt{\frac{1 + u'^2}{2gu}}dx,
-\end{equation}
+\end{displaymath}
 
 \noindent Обозначим через $T$ время, в течение которого материальная точка достигает точки $B$. Интегрируя, находим
 
-\begin{equation}
+\begin{displaymath}
     T = \frac{1}{\sqrt{2g}} \int_{0}^{a} \sqrt{\frac{1 + u'^2}{u}} \; dx.
-\end{equation}
+\end{displaymath}
 
 \noindent Задача сводится к следующему: надо найти функцию $y = u(x)$, удовлетворяющую условию $u(0) = 0$, $u(a) = b$ и сообщающую интегралу наименьшее значение. Условия означают, что искомая кривая должна проходить через заданные точки $A$ и $B$. Такого типа условия принято называть граничными, или краевыми, так как они относятся к концам промежутка, на котором должна быть определена искомая функция.
 
@@ -129,44 +131,49 @@
 	Данная задача относится к ветви математического анализа, называемой вариационным исчислением. Примером применения кривой в виде брахистохроны служит образующая цилиндрических поверхностей, используемых на детских площадках, в аттракционах для спуска с возвышения, на трамплинах.
 \end{info}
 
+%------------------------------------------------
+
 \subsection{Первая вариация функционала}
 
 Задача вариационного исчисления состоит в следующем: дан функционал $J$ с областью определения $D(J)$; требуется найти элемент $u_{0} \in D(J)$, сообщающий функционалу либо минимальное значение, либо максимальное. Задача о максимуме функционала $J$ тождественна с задачей о минимуме функционала $\text{--} J$.
 
 Будем рассматривать функционал $J$. Возьмём произвольный элемент $u \in D(J)$ и произвольный элемент $\eta \in M $. Обозначим через $\alpha$ произвольное вещественное число. Нетрудно видеть, что элемент $ u + \alpha \eta \in D(J)$. Составим выражение $J[u + \alpha \eta]$. Данное выражение есть непрерывно дифференцируемая функция от $\alpha$. Вычислим её производную и возьмём значение этой производной при $\alpha = 0$:
 
-\begin{equation}
+\begin{displaymath}
     \frac{dJ[u + \alpha \eta]}{d\alpha}.
-\end{equation}
+\end{displaymath}
 
 \noindent В результате получим число, которое можно рассматривать как значение функционала, зависящего от двух элементов $u$ и $\eta$. Функционал
 
-\begin{equation}
+\begin{displaymath}
     \frac{dJ[u + \alpha \eta]}{d\alpha} \cdot \alpha
-\end{equation}
+\end{displaymath}
 
 \noindent называется первой вариацией функционала $J$ на элементе $u$ и обозначается символом $\delta J[u, \eta]$:
 
-\begin{equation}
+\begin{displaymath}
      \delta J[u, \eta] = \frac{dJ[u + \alpha \eta]}{d\alpha} \cdot \alpha.
-\end{equation}
+\end{displaymath}
 
 \noindent При этом разность двух функций $u \in D(J)$ и $u_{1} \in D(J)$ называют вариацией функции $u$ и обозначают $\delta u = u(x) \text{--} u_{1}(x)$.
 
-\subsection{Необходимое условие минимума функционала}\label{
-sub_section_minimum_conditions}
+%------------------------------------------------
+
+\subsection{Необходимое условие минимума функционала}\label{sub_section_minimum_conditions}
 
 Пусть функционал $J$ достигает на некотором элементе $u_{0}$ относительного минимума. Возьмём произвольный элемент $\eta \in M$ и произвольное вещественное число $\alpha$. По определению относительного минимума при достаточно малых значениях $\alpha$
 
-\begin{equation}
+\begin{displaymath}
      dJ[u_{0} + \alpha\eta] \geq dJ[u_{0}].
-\end{equation}
+\end{displaymath}
 
 \noindent Это неравенство означает, что функция одной вещественной переменной $\alpha$, равная $dJ[u_{0} + \alpha\eta]$, имеет при $\alpha = 0$ относительный минимум. Но тогда необходимо, чтобы  $\delta J[u_{0}, \eta] = 0$.
 
 \begin{warn}[Важно!]
 	Если функционал в некоторой точке достигает минимума, то в этой точке первая вариация функционала равна нулю. В этом заключается необходимое условие экстремума функционала.
 \end{warn}
+
+%------------------------------------------------
 
 \subsection{Уравнение Эйлера. Связь между вариационной и краевой задачами}
 
@@ -178,16 +185,14 @@ sub_section_minimum_conditions}
 \end{displaymath}
 
 \noindent для всех финитных гладких функций $h$ на $(a, b)$, тогда $f$ является тождественным нулём.
-
-
 \end{warn}
 
 Рассмотрим основную лемму вариационного исчисления - лемму Лагранжа. Пусть $f(x, y)$ – функция, непрерывная в области $D$ с контуром $\Gamma$. Если непрерывной в области $D$ вместе со своими частными производными до $n$-го порядка включительно и обращающейся в нуль на границе $\Gamma(\eta(x, y)|_{\Gamma}  = 0)$, то $f(x, y) = 0$.
 Для примера, рассмотренного в главе \label{sub_section_minimum_conditions}, было получено в точке минимума функционала условие:
 
-\begin{equation}
+\begin{displaymath}
 	\delta J[u, \eta] = \int_{a}^{b} [\Phi'_{u} - \frac{d}{dx}\Phi'_{u}] \alpha \eta dx = 0.
-\end{equation}
+\end{displaymath}
 
 \noindent Из леммы Лагранжа, можем записать
 
@@ -197,15 +202,17 @@ sub_section_minimum_conditions}
 
 \noindent Уравнение (\ref{euler_equation}) называют уравнением Эйлера. Если предположить существование непрерывной второй производной от $u(x)$, то уравнение можно записать в виде:
 
-\begin{equation}
-	\Phi''_{u'u'} \cdot u'' + \Phi''_{uu'} \cdot u' + \Phi''_{xu'} - Phi'_{u} = 0.
-\end{equation}
+\begin{displaymath}
+	\Phi''_{u'u'} \cdot u'' + \Phi''_{uu'} \cdot u' + \Phi''_{xu'} - \Phi'_{u} = 0.
+\end{displaymath}
 
 Таким образом, условие минимума функционала при краевых условиях приводит к краевой задаче для уравнения Эйлера при тех же краевых условиях. Иными словами, существует тесная связь между вариационной задачей о минимуме функционала и краевой задачей для уравнения Эйлера для этого функционала.
 
 \begin{warn}[Важно!]
 	Решения уравнения Эйлера для функционала, удовлетворяющие краевым условиям, называют экстремалями функционала.
 \end{warn}
+
+%------------------------------------------------
 
 \subsection{Пути решения вариационных задач}
 
@@ -217,25 +224,29 @@ sub_section_minimum_conditions}
 %	ГЛАВА 2
 %----------------------------------------------------------------------------------------
 
+\newpage
+
 \section{Прямые методы вариационного исчисления}
 
 Основным вопросом, возникающим в связи с любой вариационной проблемой, является вопрос о существовании решения. Классические методы вариационного исчисления приводят этот вопрос в первую очередь к вопросу о существовании решения дифференциального уравнения. При этом ищется решение не в окрестности какой-либо точки, а во всей области - при определённых краевых условиях (решение в целом). Доказательство существования таких решений теория дифференциальных уравнений даёт лишь в редких случаях. Это обстоятельство заставило искать другие подходы к вариационным проблемам и привело к созданию так называемых прямых методов.
 
 Прямые методы вариационного исчисления оказались полезными и для теории дифференциальных уравнений. Действительно, если некоторое дифференциальное уравнение можно рассматривать, как уравнение Эйлера для некоторого функционала и если каким-то приёмом установлено, что этот функционал имеет экстремум в классе достаточное число раз дифференцируемых функций, то тем самым доказано, что исходное дифференциальное уравнение имеет решение в целом при рассматриваемых краевых условиях. Так как прямой метод состоит в построении последовательности функций, сходящейся к искомой функции, то с помощью прямого метода не только устанавливается существование решения в целом, но и даётся некоторый способ для приближённого построения этого решения.
 
+%------------------------------------------------
+
 \subsection{Метод Ритца}
 
-Одним из важнейших практических методов для построения минимизирующих последовательностей является метод, предложенный в 1908 году Вальтером Ритца. Состоит он в следующем. Вычисляется $n$-ое приближение к минимизируемой функции $u_{0}(x)$ в виде
+Одним из важнейших практических методов для построения минимизирующих последовательностей является метод, который предложил в 1908 году Вальтер Ритц --- швейцарский физик-теоретик и математик. Метод состоит в следующем --- вычисляется $n$-ое приближение к минимизируемой функции $u_{0}(x)$ в виде
 
-\begin{equation}
+\begin{displaymath}
 	u_{n}(x) = \sum_{i=0}^n \alpha_{i}\varphi_{i}(x),
-\end{equation}
+\end{displaymath}
 
 \noindent Здесь значение функционала $J[u]$ рассматривается не на произвольных допустимых кривых данной вариационной задачи, а лишь на всевозможных линейных комбинациях с постоянными коэффициентами. Коэффициенты составлены из $n$ первых функций некоторой выбранной последовательности функций
 
-\begin{equation}
+\begin{displaymath}
 	\varphi_{1}(x), \; \varphi_{2}(x), \; \varphi_{3}(x), \; \ldots, \; \varphi_{n}(x).
-\end{equation}
+\end{displaymath}
 
 \begin{info}
 	Данные функции часто называют координатными, базисными или финитными.
@@ -243,9 +254,9 @@ sub_section_minimum_conditions}
 
 На линейных комбинациях функционал $J[u]$ превращается в функцию $\varphi(\alpha_{1}, \ldots, \alpha_{n})$ коэффициентов $\alpha_{1}, \ldots, \alpha_{n}$. Эти коэффициенты выбираются так, чтобы функция $\varphi(\alpha_{1}, \ldots, \alpha_{n})$ достигала экстремум. Следовательно, $\alpha_{1}, \ldots, \alpha_{n}$ должны быть определены из условий стационарности, то есть из системы
 
-\begin{equation}
+\begin{displaymath}
 	\frac{d\varphi}{d\alpha_{i}} = 0, \; i = 1, \ldots, n.
-\end{equation}
+\end{displaymath}
 
 Получившаяся в результате последовательность функций сходится к минимуму по функционалу. Заканчивая процесс вычислений, получают значение $J[\widetilde{\varphi}]$, приближённо равное глобальному минимуму (при этом сама функция $\widetilde{\varphi}$ может сильно отличаться от оптимальной).
 
@@ -255,35 +266,35 @@ sub_section_minimum_conditions}
 
 Имеем линейное дифференциальное уравнение 2-го порядка:
 
-\begin{equation}
+\begin{displaymath}
 	\frac{d}{dx}(x^2 \frac{d \varphi}{dx}) - 2\varphi = -1 - \ln{x^2}.
-\end{equation}
+\end{displaymath}
 
 \noindent Граничные условия, которого:
 
-\begin{equation}
+\begin{displaymath}
 	\text{A)} \; \varphi'(1) = 0, \; \varphi(2) = 1;
-\end{equation}
+\end{displaymath}
 
-\begin{equation}
+\begin{displaymath}
 	\text{B)} \; \varphi(1) = 0, \; \varphi(2) + \varphi'(2) = 1.
-\end{equation}
+\end{displaymath}
 
 \noindent Решая исходное линейное дифференциальное уравнение
 
-\begin{equation}
+\begin{displaymath}
 	x^2 \varphi'' + 2 x \varphi' - 2 \varphi = -1 - \ln{x^2}.
-\end{equation}
+\end{displaymath}
 
 \noindent получим общее решение дифференциального уравнения в виде:
 
-\begin{equation}
+\begin{displaymath}
 	\phi(x) = \frac{C_{2}}{x^2} + C_{1}x + \frac{\ln{x^2}}{2} + 1
-\end{equation}
+\end{displaymath}
 
-\begin{equation}
+\begin{displaymath}
 	\phi'(x) = - \frac{2C_{2}}{x^3} + C_{1} + \frac{1}{x}.
-\end{equation}
+\end{displaymath}
 
 Пользуясь граничными условиями составим системы уравнений из которых определим неизвестные коэффициенты и составим таблицу \ref{table_exact_coefficients}. 
 
@@ -356,13 +367,13 @@ sub_section_minimum_conditions}
 
 \noindent Исходные функции принимают вид
 
-\begin{equation}
+\begin{displaymath}
 	\text{A)} \; \phi_{\ast}^{[\infty]}(x) = \frac{0.307494781044718}{x^2} - 0.385010437910562 x + \frac{\ln{x^2}}{2} + 1,
-\end{equation}
+\end{displaymath}
 
-\begin{equation}
+\begin{displaymath}
 	\text{B)} \; \phi_{\ast}^{[\infty]}(x) = - \frac{0.602284273146684}{x^2} - 0.397715726853315 x + \frac{\ln{x^2}}{2} + 1.
-\end{equation}
+\end{displaymath}
 
 Данные кривые будут единственными кривыми возможного экстремума функционала с данными граничными условиями (см. приложение \ref{appendix_a}). 
 
@@ -370,23 +381,23 @@ sub_section_minimum_conditions}
 
 Данную задачу также называют – простейшей вариационной задачей. В задаче требуется найти функцию $\varphi(x)$, доставляющую экстремум функционалу
 
-\begin{equation}
+\begin{displaymath}
 	J[\varphi] = \int_{a}^{b} f(x, \varphi, \varphi')dx,
-\end{equation}
+\end{displaymath}
 
 \noindent при условиях $\varphi(a) = \varphi_{0}$ и $\varphi(b) = \varphi_{1}$.
 
 Если граничные условия однородны, то есть $\varphi(a) = \varphi(b) = 0$, то проще всего в качестве базисных функций выбрать функции, удовлетворяющие этим условиям: $N_{i}(a) = N_{i}(b) = 0$, $n = 1, 2, \ldots, m$. Например:
 
-\begin{equation}
+\begin{displaymath}
 	N_{i}(x) = (x-a)(x-b)\varphi_{i}(x),
-\end{equation}
+\end{displaymath}
 
 \noindent где $\varphi_{i}(x)$ – какие-нибудь непрерывные функции. Очевидно, что при этом и аппроксимация 
 
-\begin{equation}
+\begin{displaymath}
 	\varphi_{n}(x) = \sum_{i=0}^n \alpha_{i}N_{i}(x)
-\end{equation}
+\end{displaymath}
 
 \noindent при любых $\alpha_{i}$ будет удовлетворять граничным условиям.
 
@@ -408,71 +419,71 @@ sub_section_minimum_conditions}
 
 \noindent Граничные условия, которого:
 
-\begin{equation}
+\begin{displaymath}
 	\varphi'(1) = 0, \; \varphi(2) = 1.
-\end{equation}
+\end{displaymath}
 
 Исходная задача эквивалентна нахождению функции $\varphi(x)$, удовлетворяющей граничным (краевым) условиям и минимизирующую функционал
 
-\begin{equation}
+\begin{displaymath}
 	J[\varphi] = \int_{a}^{b} f(x, \varphi, \varphi')dx + g(\varphi(a), \varphi(b)),
-\end{equation}
+\end{displaymath}
 
 \noindent где $g(\varphi(a), \varphi(b))$ – заданная функция, имеющая непрерывные производные по $\varphi(a)$ и $\varphi(b)$.
 
 Для граничных условий $\varphi'(1) = 0$, $\varphi(2) = 1$ задача эквивалентна частному случаю краевой задачи Неймана (2-го рода). Общий вид которой:
 
-\begin{equation}
+\begin{displaymath}
 	J[\varphi] = \frac{1}{2} \int_{a}^{b} [p(x) \varphi'^2 + \varphi^2 - 2f(x)\varphi]dx - \gamma_{1} p(a) \varphi(a) + \gamma_{2} p(b) \varphi(b).
-\end{equation}
+\end{displaymath}
 
 \noindent Условия экстремума:
 
-\begin{equation}
+\begin{displaymath}
 	\frac{d}{dx} (p(x) \frac{d\varphi}{dx}) - q(x)\varphi = -f(x).
-\end{equation}
+\end{displaymath}
 
 \noindent Граничные условия:
 
-\begin{equation}
+\begin{displaymath}
 	\varphi'(a) = \gamma_{1}, \; \varphi(b) = \gamma_{2}.
-\end{equation}
+\end{displaymath}
 
 Для того чтобы функционал достигал на функции экстремума, необходимо, чтобы эта функция удовлетворяла уравнению Эйлера и условиям трансверсальности. Функция, которую в дальнейшем необходимо будет подставить в функционал, должна иметь вид
 
-\begin{equation}
+\begin{displaymath}
 	f(x, \varphi, \varphi') = \frac{x^2}{2}\varphi'^2 + \varphi^2 - (1+\ln{x^2})\varphi,
-\end{equation}
+\end{displaymath}
 
-\begin{equation}
+\begin{displaymath}
 	g(\varphi(a)) = 0.
-\end{equation}
+\end{displaymath}
 
 \noindent Проверим, удовлетворяет ли функция уравнению Эйлера и условиям трансверсальности. 
 
 Во-первых, подставим функцию $f(x, \varphi, \varphi')$ в общий вид уравнения Эйлера (\ref{euler_equation}) и попытаемся получить исходную форму (\ref{equation_rang_2}).
 
-\begin{equation}
+\begin{displaymath}
 	\frac{\partial^2 f}{\partial \varphi} - \frac{d}{dx}\frac{\partial^2 f}{\partial \varphi'} = 0;
-\end{equation}
+\end{displaymath}
 
-\begin{equation}
+\begin{displaymath}
 	2\varphi - (1 + \ln{x^2}) - \frac{d}{dx}(x^2 \varphi') = 0;
-\end{equation}
+\end{displaymath}
 
-\begin{equation}
+\begin{displaymath}
 	\frac{d}{dx}(x^2 \varphi') - 2\varphi = -1 - \ln(x^2).
-\end{equation}
+\end{displaymath}
 
 \noindent Во-вторых, проверим условия трансверсальности:
 
-\begin{equation}
+\begin{displaymath}
 	[\frac{\partial^2 f}{\partial \varphi'} - \frac{\partial g}{d\varphi(a)}]_{x=a} = 0;
-\end{equation}
+\end{displaymath}
 
-\begin{equation}
+\begin{displaymath}
 	\varphi'(1) = 0.
-\end{equation}
+\end{displaymath}
 
 \noindent Оба условия соблюдены, поэтому запишем задачу в вариационной формулировке:
 
@@ -482,33 +493,33 @@ sub_section_minimum_conditions}
 
 Имеем одну фиксированную точку $(x=2)$, а другую $(x=1)$ – подвижную. Для первой должно выполняться условие $\varphi(2)=1$, а для второй точки – условие $\varphi'(1)=0$ как условие трансверсальности. Последнее будет выполняться автоматически, реализуя условия минимума функционала. Поэтому в соответствии с (\ref{equation_solve_var_rank_2}), в данном случае $\psi(x) = 1$, а в качестве $\lbrace N_{i} \rbrace$ - любые линейно независимые функции, равные нулю при $x=2$.
 
-\begin{equation}
+\begin{displaymath}
 	\varphi(x) \approx \varphi_{n}(x) = (\alpha_{1} + \alpha_{2}x + \alpha_{3}x^2 + \cdots + \alpha_{n}x^{n-1})(x-2)+1.
-\end{equation}
+\end{displaymath}
 
 \noindent Положим $n = 3$
 
-\begin{equation}
+\begin{displaymath}
 	\varphi^{[3]}(x) = (\alpha_{1} + \alpha_{2}x + \alpha_{3}x^2)(x-2)+1.
-\end{equation}
+\end{displaymath}
 
 \noindent Подставим функцию $\varphi^{[3]}(x)$ в функционал $J[\varphi]$ (\ref{equation_functional_rank_2}), интегрируя, получим функцию $\Phi(\alpha_{1}, \alpha_{2}, \alpha_{3})$, зависящую от неизвестных коэффициентов, но уже не зависящую от $x$.
 
-\begin{equation}
+\begin{displaymath}
 	\Phi(\alpha_{1}, \alpha_{2}, \alpha_{3}) = \frac{11}{3}\alpha_{1}\alpha_{2} - \frac{19}{9}\alpha_{2} - \frac{155}{72}\alpha_{3} - \ln{16} - 3\alpha_{1} + \frac{14}{3}\alpha_{1}\alpha_{3} + \frac{38}{5}\alpha_{2}\alpha_{3} + \alpha_{1}\ln{16}.
-\end{equation}
+\end{displaymath}
 
 Решим задачу минимизации функции трех переменных для $\Phi(\alpha_{1}, \alpha_{2}, \alpha_{3})$
 
-\begin{equation}
+\begin{displaymath}
 	\frac{\partial \Phi}{\partial \alpha_{1}} = 0, \;
 	\frac{\partial \Phi}{\partial \alpha_{2}} = 0, \;
 	\frac{\partial \Phi}{\partial \alpha_{3}} = 0.
-\end{equation}
+\end{displaymath}
 
 \noindent Получим систему из трёх уравнений с тремя неизвестными
 
-\begin{equation}
+\begin{displaymath}
 	\begin{cases}
 		3\alpha_{1} + \frac{11}{3}\alpha_{2} + \frac{14}{3}\alpha_{3} + \ln{16} - 3 = 0 \\
 		\\
@@ -516,7 +527,7 @@ sub_section_minimum_conditions}
 		\\
 		\frac{14}{3}\alpha_{1} + \frac{38}{5}\alpha_{2} + \frac{433}{35}\alpha_{3} + \ln{4 \cdot 2^{\frac{2}{3}}} - \frac{155}{72} = 0
 	\end{cases}
-\end{equation}
+\end{displaymath}
 
 \noindent Решая данную систему, мы находим неизвестные коэффициенты
 
@@ -524,9 +535,9 @@ sub_section_minimum_conditions}
 	\alpha_{1} = \frac{24851}{876} - \frac{2992}{73} \ln{2} = -0.040817774913557,
 \end{displaymath}
 
-\begin{equation}	
+\begin{displaymath}	
 	\alpha_{2} = -\frac{3010}{73} + \frac{4364}{73} \ln{2} = -0.204031451556182, 
-\end{equation}
+\end{displaymath}
 
 \begin{displaymath}
 	\alpha_{3} = \frac{8645}{584} - \frac{1568}{73} \ln{2} = -0.085339439972523.
@@ -534,9 +545,9 @@ sub_section_minimum_conditions}
 
 Таким образом, приближенное решение данной задачи имеет вид (см. приложение \ref{appendix_b})
 
-\begin{equation}	
+\begin{displaymath}	
 	\phi_{\ast}^{[3]} = (-0.040817774913557+0.204031451556182x -0.085339439972523906387x^2)(x-2) + 1.
-\end{equation}
+\end{displaymath}
 
 \noindent Процесс сходимости и точность решения отражены в таблице \ref{table_process_of_convergence_rank_2}
 
@@ -568,29 +579,29 @@ sub_section_minimum_conditions}
 
 \noindent Граничные условия, которого:
 
-\begin{equation}
+\begin{displaymath}
 	\varphi(1) = 0, \; \varphi(2) + \varphi'(2) = 1.
-\end{equation}
+\end{displaymath}
 
 Исходная задача эквивалентна нахождению функции $\varphi(x)$, удовлетворяющей граничным (краевым) условиям и минимизирующую функционал
 
-\begin{equation}
+\begin{displaymath}
 	J[\varphi] = \int_{a}^{b} f(x, \varphi, \varphi')dx + g(\varphi(a), \varphi(b)),
-\end{equation}
+\end{displaymath}
 
 \noindent где $g(\varphi(a), \varphi(b))$ – заданная функция, имеющая непрерывные производные по $\varphi(a)$ и $\varphi(b)$.
 
 Для граничных условий $\varphi(1) = 0$, $\varphi(2) + \varphi'(2) = 1$ задача эквивалентна частному случаю смешанной краевой задачи (3-го рода). Общий вид которой:
 
-\begin{equation}
+\begin{displaymath}
 	J[\varphi] = \frac{1}{2} \int_{a}^{b} [p(x)\varphi'^{2} + \varphi^2 - 2f(x)\varphi]dx - \frac{1}{2}\beta_{1}p(a)\varphi^2(a) + \gamma_{1}p(a)\varphi(a) + \frac{1}{2}\beta_{2}p(b)\varphi^2(b) - \gamma_{2}p(b)\varphi(b).
-\end{equation}
+\end{displaymath}
 
 \noindent Условия экстремума:
 
-\begin{equation}
+\begin{displaymath}
 	\frac{d}{dx}(p(x)\frac{d\varphi}{dx})-q(x)\varphi = -f(x)
-\end{equation}
+\end{displaymath}
 
 \noindent и граничные условия $\varphi'(a) + \beta_{1}\varphi(a) = \gamma_{1}$, $\varphi'(b) + \beta_{2}\varphi(b) = \gamma_{2}$.
 
@@ -600,57 +611,57 @@ sub_section_minimum_conditions}
 	f(x, \varphi, \varphi') = \frac{x^2}{2}\varphi'^2 - \varphi^2 + (1 + \ln(x^2))\varphi,
 \end{equation}
 
-\begin{equation}
+\begin{displaymath}
 	g(\varphi(b)) = 2\varphi^2(2) - 4\varphi(2).
-\end{equation}
+\end{displaymath}
 
 \noindent Проверим, удовлетворяет ли функция уравнению Эйлера и условиям трансверсальности.
 
 Во-первых, подставим функцию (\ref{equation_func_rank_3}) в общий вид уравнения Эйлера (\ref{euler_equation}):
 
-\begin{equation}
+\begin{displaymath}
 	\frac{\partial f}{\partial \varphi} - \frac{d}{dx} \frac{\partial f}{\partial \varphi'} = 0;
-\end{equation}
+\end{displaymath}
 
-\begin{equation}
+\begin{displaymath}
 	2\varphi - (1 + \ln(x^2)) - \frac{d}{dx}(x^2 \varphi') = 0;
-\end{equation}
+\end{displaymath}
 
-\begin{equation}
+\begin{displaymath}
 	\frac{d}{dx}(x^2 \varphi') - 2\varphi = -1 - \ln(x^2).
-\end{equation}
+\end{displaymath}
 
 Во-вторых, проверим условия трансверсальности:
 
-\begin{equation}
+\begin{displaymath}
 	[\frac{\partial f}{\partial \varphi'} + \frac{\partial g}{\partial \varphi(b)}]_{x=b} = 0;
-\end{equation}
+\end{displaymath}
 
-\begin{equation}
+\begin{displaymath}
 	4\varphi' + 4\varphi - 4 = 0;
-\end{equation}
+\end{displaymath}
 
-\begin{equation}
+\begin{displaymath}
 	\varphi'(2) + \varphi(2) = 1.
-\end{equation}
+\end{displaymath}
 
 Запишем исходную задачу в вариационной формулировке:
 
-\begin{equation}
+\begin{displaymath}
 	J[\varphi] = \int_{1}^{2} [\frac{x^2}{2}\varphi'^2 + \varphi^2 - (1 + \ln{x^2}\varphi)]dx + 2\varphi^2(2) - 4\varphi(2).
-\end{equation}
+\end{displaymath}
 
 Имеем одну фиксированную точку ($x = 2$), а другую ($x = 1$) – подвижную. Для первой должно выполняться условие $\varphi(1) = 0$, а для второй точки – условие $\varphi(2) + \varphi'(2) = 1$ как условие трансверсальности. Последнее будет выполняться автоматически, реализуя условия минимума функционала. Поэтому в соответствии с (\ref{equation_solve_var_rank_2}), в данном случае $\psi(x) = 0$, а в качестве $\lbrace N_{i} \rbrace$ - любые линейно независимые функции, равные нулю при $x = 1$.
 
-\begin{equation}
+\begin{displaymath}
 	\varphi(x) \approx \varphi_{n}(x) = (\alpha_{1} + \alpha_{2}x + \alpha_{3}x^2 + \cdots + \alpha_{n}x^{n-1})(x-2)+1.
-\end{equation}
+\end{displaymath}
 
 \noindent Положим $n = 3$
 
-\begin{equation}
+\begin{displaymath}
 	\varphi^{[3]}(x) = (\alpha_{1} + \alpha_{2}x + \alpha_{3}x^2)(x-2)+1.
-\end{equation}
+\end{displaymath}
 
 \noindent Подставим функцию $\varphi^{[3]}(x)$ в функционал $J[\varphi]$ (\ref{equation_functional_rank_2}), интегрируя, получим функцию $\Phi(\alpha_{1}, \alpha_{2}, \alpha_{3})$, зависящую от неизвестных коэффициентов, но уже не зависящую от $x$.
 
@@ -658,21 +669,21 @@ sub_section_minimum_conditions}
 	\Phi(\alpha_{1}, \alpha_{2}, \alpha_{3}) = \frac{19}{3}\alpha_{1}\alpha_{2} - \frac{79}{9}\alpha_{2} - \frac{1231}{72}\alpha_{3} - 5\alpha_{1} + \frac{79}{6}\alpha_{1}\alpha_{3} + \frac{154}{5}\alpha_{2}\alpha_{3} + 2(\alpha_{1} + 2 \alpha_{2} + 4\alpha_{3})^2 +
 \end{displaymath}
 	
-\begin{equation}	
+\begin{displaymath}	
 	 + \frac{3}{2}\alpha_{1}^{2} +  \frac{71}{10}\alpha_{2}^{2} + \frac{2407}{70}\alpha_{3}^{2} + \alpha_{2} \ln{\frac{2^{\frac{2}{3}}}{4}} - \alpha_{3} \ln{4 \cdot 2^{\frac{2}{3}}}.
-\end{equation}
+\end{displaymath}
 
 \noindent Решим задачу минимизации функции трех переменных для $\Phi(\alpha_{1}, \alpha_{2}, \alpha_{3})$
 
-\begin{equation}
+\begin{displaymath}
 	\frac{\partial \Phi}{\partial \alpha_{1}} = 0, \;
 	\frac{\partial \Phi}{\partial \alpha_{2}} = 0, \;
 	\frac{\partial \Phi}{\partial \alpha_{3}} = 0.
-\end{equation}
+\end{displaymath}
 
 \noindent Получим систему из трёх уравнений с тремя неизвестными
 
-\begin{equation}
+\begin{displaymath}
 	\begin{cases}
 		7\alpha_{1} + \frac{43}{3}\alpha_{2} + \frac{175}{6}\alpha_{3} - 5 = 0 \\
 		\\
@@ -680,27 +691,27 @@ sub_section_minimum_conditions}
 		\\
 		\frac{175}{6}\alpha_{1} + \frac{314}{5}\alpha_{2} + \frac{4647}{35}\alpha_{3} + \log{4 \cdot 2^{\frac{2}{3}}} - \frac{1231}{72} = 0
 	\end{cases}
-\end{equation}
+\end{displaymath}
 
 \noindent Решая данную систему, мы находим неизвестные коэффициенты
 
 \begin{displaymath}
-	$\alpha_{1} = \frac{493099}{9876} - \frac{55088}{823}\ln{2} = 3.532796416339083$
+	\alpha_{1} = \frac{493099}{9876} - \frac{55088}{823}\ln{2} = 3.532796416339083
 \end{displaymath}
 
-\begin{equation}
+\begin{displaymath}
 	\alpha_{2} = -\frac{173591}{3292} + \frac{59836}{823}\ln{2} = -2.336081778876199
-\end{equation}
+\end{displaymath}
 
 \begin{displaymath}
-	$\alpha_{3} = \frac{11606}{823} - \frac{16184}{823}\ln{2} = 0.471574762840638$
+	\alpha_{3} = \frac{11606}{823} - \frac{16184}{823}\ln{2} = 0.471574762840638
 \end{displaymath}
 
 \noindent Таким образом, приближенное решение данной задачи имеет вид (см. приложение \ref{appendix_c})
 
-\begin{equation}
+\begin{displaymath}
 	\varphi_{\ast}^{[3]}(x) = (3.532796416339083 - 2.336081778876199x + 0.471574762840638 x^2)(x-1).
-\end{equation}
+\end{displaymath}
 
 Процесс сходимости и точность решения отражены в таблице \ref{table_process_of_convergence_rank_3}.
 
@@ -722,21 +733,25 @@ sub_section_minimum_conditions}
 \label{table_process_of_convergence_rank_3}
 \end{table}
 
+
+
+\newpage
+
 \section*{Заключение}
 
 Современному инженеру часто приходится иметь дело с задачами, которые требуют от него хорошей математической подготовки и твёрдых навыков в применении разнообразных математических методов. Расширение математического кругозора инженеров немало способствует новым достижениям техники.
 
-Вариационное исчисление – один из наиболее важных разделов классического математического анализа для приложений. Вариационное исчисление является быстро развивающимся разделом математического анализа, охватить который с достаточной полнотой в монографии небольшого объёма невозможно. Данному разделу математического анализа посвящено большое количество книг.
+Вариационное исчисление – один из наиболее важных для приложений разделов классического математического анализа. Вариационное исчисление является быстро развивающимся разделом математического анализа, охватить который с достаточной полнотой в монографии небольшого объёма невозможно. Данному разделу математического анализа посвящено большое количество книг, таких как:
 
+$\bullet$ Эльсгольц Л. Э. Дифференциальные уравнения и вариационное исчисление / Эльсгольц Л. Э. – М.: Наука, 1969;
 
+$\bullet$ Канторович Л. В. Вариационное исчисление / Канторович Л. В., Крылов В. И., Смирнов В. И. – М.: Кубуч, 1933;
 
+$\bullet$ Гельфанд И. М. Вариационное исчисление / Гельфанд И. М., Фомин С. В. – М.: Наука. 1961;
 
+$\bullet$ Кострюков С. А. Основы вариационного исчисления / Кострюков С. А., Пешков В. В., Шунин Г. Е. – учеб. пособие. Воронеж. ВГТУ, 2011;
 
-
-
-
-
-
+$\bullet$ Краснов М. Л. Вариационное исчисление, задачи и упражнения / Краснов М. Л., Макаренко Г. И., Киселев А. И.  — М.: Наука, 1973.
 
 
 \newpage
