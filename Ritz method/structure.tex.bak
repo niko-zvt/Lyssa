@@ -20,6 +20,7 @@
 %----------------------------------------------------------------------------------------
 
 \usepackage{amsmath,amsfonts,stmaryrd,amssymb} % Math packages
+\newcommand{\Lagr}{\mathcal{L}}
 
 \usepackage{enumerate} % Custom item numbers for enumerations
 
