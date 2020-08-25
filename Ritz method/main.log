@@ -1,54 +1,48 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.5.26)  25 AUG 2020 01:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.25)  26 AUG 2020 00:59
 entering extended mode
-**./main.tex
-(main.tex
+**"f:/Dev/Projects/Lyssa/Ritz Method/main.tex"
+("f:/Dev/Projects/Lyssa/Ritz Method/main.tex"
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-05-15>
-("F:\Other Program Files\Latex\MikTeX\tex/latex/base\article.cls"
+L3 programming layer <2020-08-07> ("F:\Other Program Files\Latex\MikTeX\tex/latex/base\article.cls"
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
 ("F:\Other Program Files\Latex\MikTeX\tex/latex/base\size10.clo"
 File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count167
-\c@section=\count168
-\c@subsection=\count169
-\c@subsubsection=\count170
-\c@paragraph=\count171
-\c@subparagraph=\count172
-\c@figure=\count173
-\c@table=\count174
+\c@part=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
-)
-(structure.tex
-("F:\Other Program Files\Latex\MikTeX\tex/latex/amsmath\amsmath.sty"
+) ("f:/Dev\Projects\Lyssa\Ritz Method\structure.tex" ("F:\Other Program Files\Latex\MikTeX\tex/latex/amsmath\amsmath.sty"
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
 ("F:\Other Program Files\Latex\MikTeX\tex/latex/amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
-
-("F:\Other Program Files\Latex\MikTeX\tex/latex/amsmath\amsgen.sty"
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks15
 \ex@=\dimen135
-))
-("F:\Other Program Files\Latex\MikTeX\tex/latex/amsmath\amsbsy.sty"
+)) ("F:\Other Program Files\Latex\MikTeX\tex/latex/amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen136
-)
-("F:\Other Program Files\Latex\MikTeX\tex/latex/amsmath\amsopn.sty"
+) ("F:\Other Program Files\Latex\MikTeX\tex/latex/amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count175
+\inf@bad=\count176
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count176
-\leftroot@=\count177
+\uproot@=\count177
+\leftroot@=\count178
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count178
-\DOTSCASE@=\count179
+\classnum@=\count179
+\DOTSCASE@=\count180
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
@@ -57,15 +51,15 @@ LaTeX Info: Redefining \cdots on input line 610.
 \big@size=\dimen137
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count180
-\c@MaxMatrixCols=\count181
+\macc@depth=\count181
+\c@MaxMatrixCols=\count182
 \dotsspace@=\muskip16
-\c@parentequation=\count182
-\dspbrk@lvl=\count183
+\c@parentequation=\count183
+\dspbrk@lvl=\count184
 \tag@help=\toks16
-\row@=\count184
-\column@=\count185
-\maxfields@=\count186
+\row@=\count185
+\column@=\count186
+\maxfields@=\count187
 \andhelp@=\toks17
 \eqnshift@=\dimen138
 \alignsep@=\dimen139
@@ -79,46 +73,37 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \mathdisplay@stack=\toks19
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
-)
-("F:\Other Program Files\Latex\MikTeX\tex/latex/amsfonts\amsfonts.sty"
+) ("F:\Other Program Files\Latex\MikTeX\tex/latex/amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)
-("F:\Other Program Files\Latex\MikTeX\tex/latex/stmaryrd\stmaryrd.sty"
+) ("F:\Other Program Files\Latex\MikTeX\tex/latex/stmaryrd\stmaryrd.sty"
 Package: stmaryrd 1994/03/03 St Mary's Road symbol package
 \symstmry=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
 (Font)                  U/stmry/m/n --> U/stmry/b/n on input line 89.
-)
-("F:\Other Program Files\Latex\MikTeX\tex/latex/amsfonts\amssymb.sty"
+) ("F:\Other Program Files\Latex\MikTeX\tex/latex/amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 LaTeX Font Info:    Redeclaring math symbol \boxdot on input line 44.
-)
-("F:\Other Program Files\Latex\MikTeX\tex/latex/tools\enumerate.sty"
+) ("F:\Other Program Files\Latex\MikTeX\tex/latex/tools\enumerate.sty"
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks20
-)
-("F:\Other Program Files\Latex\MikTeX\tex/latex/algorithm2e\algorithm2e.sty"
+) ("F:\Other Program Files\Latex\MikTeX\tex/latex/algorithm2e\algorithm2e.sty"
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
-\c@AlgoLine=\count187
-
-("F:\Other Program Files\Latex\MikTeX\tex/latex/base\ifthen.sty"
+\c@AlgoLine=\count188
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \algocf@hangindent=\skip52
-
-("F:\Other Program Files\Latex\MikTeX\tex/latex/ifoddpage\ifoddpage.sty"
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/ifoddpage\ifoddpage.sty"
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count188
-)
-("F:\Other Program Files\Latex\MikTeX\tex/latex/tools\xspace.sty"
+\c@checkoddpage=\count189
+) ("F:\Other Program Files\Latex\MikTeX\tex/latex/tools\xspace.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
-)
-("F:\Other Program Files\Latex\MikTeX\tex/latex/relsize\relsize.sty"
+) ("F:\Other Program Files\Latex\MikTeX\tex/latex/relsize\relsize.sty"
 Package: relsize 2013/03/29 ver 4.1
 )
 \skiptotal=\skip53
@@ -151,104 +136,80 @@ Package: relsize 2013/03/29 ver 4.1
 \algoheightrule=\skip68
 \algotitleheightruledefault=\skip69
 \algotitleheightrule=\skip70
-\c@algocfline=\count189
-\c@algocfproc=\count190
-\c@algocf=\count191
+\c@algocfline=\count190
+\c@algocfproc=\count191
+\c@algocf=\count192
 \algocf@algoframe=\box53
 \algocf@algobox=\box54
-)
-("F:\Other Program Files\Latex\MikTeX\tex/latex/mdframed\mdframed.sty"
+) ("F:\Other Program Files\Latex\MikTeX\tex/latex/mdframed\mdframed.sty"
 Package: mdframed 2013/07/01 1.9b: mdframed
-
-("F:\Other Program Files\Latex\MikTeX\tex/latex/kvoptions\kvoptions.sty"
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/kvoptions\kvoptions.sty"
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
-
-("F:\Other Program Files\Latex\MikTeX\tex/latex/graphics\keyval.sty"
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks21
-)
-("F:\Other Program Files\Latex\MikTeX\tex/generic/ltxcmds\ltxcmds.sty"
+) ("F:\Other Program Files\Latex\MikTeX\tex/generic/ltxcmds\ltxcmds.sty"
 Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
-)
-("F:\Other Program Files\Latex\MikTeX\tex/generic/kvsetkeys\kvsetkeys.sty"
+) ("F:\Other Program Files\Latex\MikTeX\tex/generic/kvsetkeys\kvsetkeys.sty"
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-))
-("F:\Other Program Files\Latex\MikTeX\tex/latex/l3packages/xparse\xparse.sty"
-("F:\Other Program Files\Latex\MikTeX\tex/latex/l3kernel\expl3.sty"
-Package: expl3 2020-05-15 L3 programming layer (loader) 
-
-("F:\Other Program Files\Latex\MikTeX\tex/latex/l3backend\l3backend-pdfmode.def
-"
-File: l3backend-pdfmode.def 2020-05-05 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count192
+)) ("F:\Other Program Files\Latex\MikTeX\tex/latex/l3packages/xparse\xparse.sty" ("F:\Other Program Files\Latex\MikTeX\tex/latex/l3kernel\expl3.sty"
+Package: expl3 2020-08-07 L3 programming layer (loader) 
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/l3backend\l3backend-pdfmode.def"
+File: l3backend-pdfmode.def 2020-08-07 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count193
 \l__pdf_internal_box=\box55
 ))
 Package: xparse 2020-05-15 L3 Experimental document command parser
-
-("F:\Other Program Files\Latex\MikTeX\tex/latex/l3packages/xparse\xparse-generi
-c.tex"
-\l__xparse_current_arg_int=\count193
-\g__xparse_grabber_int=\count194
-\l__xparse_m_args_int=\count195
-\l__xparse_v_nesting_int=\count196
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/l3packages/xparse\xparse-generic.tex"
+\l__xparse_current_arg_int=\count194
+\g__xparse_grabber_int=\count195
+\l__xparse_m_args_int=\count196
+\l__xparse_v_nesting_int=\count197
 )) ("F:\Other Program Files\Latex\MikTeX\tex/latex/etoolbox\etoolbox.sty"
-Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count197
+Package: etoolbox 2020/07/15 v2.5i e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count198
 ) ("F:\Other Program Files\Latex\MikTeX\tex/latex/zref\zref-abspage.sty"
 Package: zref-abspage 2020-05-28 v2.31 Module abspage for zref (HO)
-
-("F:\Other Program Files\Latex\MikTeX\tex/latex/zref\zref-base.sty"
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/zref\zref-base.sty"
 Package: zref-base 2020-05-28 v2.31 Module base for zref (HO)
-
-("F:\Other Program Files\Latex\MikTeX\tex/generic/infwarerr\infwarerr.sty"
+ ("F:\Other Program Files\Latex\MikTeX\tex/generic/infwarerr\infwarerr.sty"
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-("F:\Other Program Files\Latex\MikTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
-"
+) ("F:\Other Program Files\Latex\MikTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty"
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) ("F:\Other Program Files\Latex\MikTeX\tex/latex/pdftexcmds\pdftexcmds.sty"
-Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-("F:\Other Program Files\Latex\MikTeX\tex/generic/iftex\iftex.sty"
+) ("F:\Other Program Files\Latex\MikTeX\tex/generic/pdftexcmds\pdftexcmds.sty"
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ ("F:\Other Program Files\Latex\MikTeX\tex/generic/iftex\iftex.sty"
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)
-("F:\Other Program Files\Latex\MikTeX\tex/generic/etexcmds\etexcmds.sty"
+) ("F:\Other Program Files\Latex\MikTeX\tex/generic/etexcmds\etexcmds.sty"
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-)
-("F:\Other Program Files\Latex\MikTeX\tex/latex/auxhook\auxhook.sty"
+) ("F:\Other Program Files\Latex\MikTeX\tex/latex/auxhook\auxhook.sty"
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
 Package zref Info: New property list: main on input line 763.
 Package zref Info: New property: default on input line 764.
 Package zref Info: New property: page on input line 765.
-)
-("F:\Other Program Files\Latex\MikTeX\tex/generic/atbegshi\atbegshi.sty"
+) ("F:\Other Program Files\Latex\MikTeX\tex/generic/atbegshi\atbegshi.sty"
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\c@abspage=\count198
+\c@abspage=\count199
 Package zref Info: New property: abspage on input line 66.
-)
-("F:\Other Program Files\Latex\MikTeX\tex/latex/needspace\needspace.sty"
+) ("F:\Other Program Files\Latex\MikTeX\tex/latex/needspace\needspace.sty"
 Package: needspace 2010/09/12 v1.3d reserve vertical space
-)
-("F:\Other Program Files\Latex\MikTeX\tex/latex/graphics\color.sty"
+) ("F:\Other Program Files\Latex\MikTeX\tex/latex/graphics\color.sty"
 Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
-
-("F:\Other Program Files\Latex\MikTeX\tex/latex/graphics-cfg\color.cfg"
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/graphics-cfg\color.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
-
-("F:\Other Program Files\Latex\MikTeX\tex/latex/graphics-def\pdftex.def"
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/graphics-def\pdftex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \mdf@templength=\skip71
-\c@mdf@globalstyle@cnt=\count199
+\c@mdf@globalstyle@cnt=\count266
 \mdf@skipabove@length=\skip72
 \mdf@skipbelow@length=\skip73
 \mdf@leftmargin@length=\skip74
@@ -288,60 +249,37 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \mdf@subsubtitlebelowskip@length=\skip108
 \mdf@subsubtitleinneraboveskip@length=\skip109
 \mdf@subsubtitleinnerbelowskip@length=\skip110
-
-("F:\Other Program Files\Latex\MikTeX\tex/latex/pgf/frontendlayer\tikz.sty"
-("F:\Other Program Files\Latex\MikTeX\tex/latex/pgf/basiclayer\pgf.sty"
-("F:\Other Program Files\Latex\MikTeX\tex/latex/pgf/utilities\pgfrcs.sty"
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/utilities\pgfutil-common.
-tex"
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/pgf/frontendlayer\tikz.sty" ("F:\Other Program Files\Latex\MikTeX\tex/latex/pgf/basiclayer\pgf.sty" ("F:\Other Program Files\Latex\MikTeX\tex/latex/pgf/utilities\pgfrcs.sty" ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/utilities\pgfutil-common.tex"
 \pgfutil@everybye=\toks22
 \pgfutil@tempdima=\dimen150
 \pgfutil@tempdimb=\dimen151
-
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/utilities\pgfutil-common-
-lists.tex"))
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/utilities\pgfutil-latex.d
-ef"
+ ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/utilities\pgfutil-common-lists.tex")) ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/utilities\pgfutil-latex.def"
 \pgfutil@abb=\box56
  ("F:\Other Program Files\Latex\MikTeX\tex/latex/ms\everyshi.sty"
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
-))
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/utilities\pgfrcs.code.tex
-" ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf\pgf.revision.tex")
+)) ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/utilities\pgfrcs.code.tex" ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf\pgf.revision.tex")
 Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
 ))
 Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
-
-("F:\Other Program Files\Latex\MikTeX\tex/latex/pgf/basiclayer\pgfcore.sty"
-("F:\Other Program Files\Latex\MikTeX\tex/latex/graphics\graphicx.sty"
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/pgf/basiclayer\pgfcore.sty" ("F:\Other Program Files\Latex\MikTeX\tex/latex/graphics\graphicx.sty"
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
-
-("F:\Other Program Files\Latex\MikTeX\tex/latex/graphics\graphics.sty"
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/graphics\graphics.sty"
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
-
-("F:\Other Program Files\Latex\MikTeX\tex/latex/graphics\trig.sty"
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-("F:\Other Program Files\Latex\MikTeX\tex/latex/graphics-cfg\graphics.cfg"
+) ("F:\Other Program Files\Latex\MikTeX\tex/latex/graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 )
 \Gin@req@height=\dimen152
 \Gin@req@width=\dimen153
-)
-("F:\Other Program Files\Latex\MikTeX\tex/latex/pgf/systemlayer\pgfsys.sty"
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/systemlayer\pgfsys.code.t
-ex"
+) ("F:\Other Program Files\Latex\MikTeX\tex/latex/pgf/systemlayer\pgfsys.sty" ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex"
 Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
-
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/utilities\pgfkeys.code.te
-x"
+ ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/utilities\pgfkeys.code.tex"
 \pgfkeys@pathtoks=\toks23
 \pgfkeys@temptoks=\toks24
-
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/utilities\pgfkeysfiltered
-.code.tex"
+ ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/utilities\pgfkeysfiltered.code.tex"
 \pgfkeys@tmptoks=\toks25
 ))
 \pgf@x=\dimen154
@@ -356,36 +294,27 @@ x"
 \pgf@yd=\dimen163
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count266
-\c@pgf@countb=\count267
-\c@pgf@countc=\count268
-\c@pgf@countd=\count269
+\c@pgf@counta=\count267
+\c@pgf@countb=\count268
+\c@pgf@countc=\count269
+\c@pgf@countd=\count270
 \t@pgf@toka=\toks26
 \t@pgf@tokb=\toks27
 \t@pgf@tokc=\toks28
-\pgf@sys@id@count=\count270
-
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/systemlayer\pgf.cfg"
+\pgf@sys@id@count=\count271
+ ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/systemlayer\pgf.cfg"
 File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
 )
 Driver file for pgf: pgfsys-pdftex.def
-
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex
-.def"
+ ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def"
 File: pgfsys-pdftex.def 2020/01/08 v3.1.5b (3.1.5b)
-
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/systemlayer\pgfsys-common
--pdf.def"
+ ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def"
 File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
-)))
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/systemlayer\pgfsyssoftpat
-h.code.tex"
+))) ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex"
 File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfsyssoftpath@smallbuffer@items=\count271
-\pgfsyssoftpath@bigbuffer@items=\count272
-)
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/systemlayer\pgfsysprotoco
-l.code.tex"
+\pgfsyssoftpath@smallbuffer@items=\count272
+\pgfsyssoftpath@bigbuffer@items=\count273
+) ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex"
 File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )) ("F:\Other Program Files\Latex\MikTeX\tex/latex/xcolor\xcolor.sty"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
@@ -403,49 +332,18 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-)
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcore.code.t
-ex"
+) ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex"
 Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
- ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmath.code.tex"
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmathcalc.code.tex
-"
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmathutil.code.tex
-")
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmathparser.code.t
-ex"
+ ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmath.code.tex" ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmathcalc.code.tex" ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmathutil.code.tex") ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmathparser.code.tex"
 \pgfmath@dimen=\dimen164
-\pgfmath@count=\count273
+\pgfmath@count=\count274
 \pgfmath@box=\box57
 \pgfmath@toks=\toks29
 \pgfmath@stack@operand=\toks30
 \pgfmath@stack@operation=\toks31
-)
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmathfunctions.cod
-e.tex"
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmathfunctions.bas
-ic.code.tex")
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmathfunctions.tri
-gonometric.code.tex")
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmathfunctions.ran
-dom.code.tex")
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmathfunctions.com
-parison.code.tex")
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmathfunctions.bas
-e.code.tex")
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmathfunctions.rou
-nd.code.tex")
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmathfunctions.mis
-c.code.tex")
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmathfunctions.int
-egerarithmetics.code.tex")))
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmathfloat.code.te
-x"
-\c@pgfmathroundto@lastzeros=\count274
-)) ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfint.code.tex")
-
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcorepoints.
-code.tex"
+) ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex" ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex") ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex") ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex") ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex") ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex") ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex") ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex") ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex"))) ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count275
+)) ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfint.code.tex") ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex"
 File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@picminx=\dimen165
 \pgf@picmaxx=\dimen166
@@ -461,129 +359,78 @@ File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@yy=\dimen176
 \pgf@zx=\dimen177
 \pgf@zy=\dimen178
-)
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcorepathcon
-struct.code.tex"
+) ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex"
 File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@path@lastx=\dimen179
 \pgf@path@lasty=\dimen180
-)
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcorepathusa
-ge.code.tex"
+) ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex"
 File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@shorten@end@additional=\dimen181
 \pgf@shorten@start@additional=\dimen182
-)
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcorescopes.
-code.tex"
+) ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex"
 File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfpic=\box58
 \pgf@hbox=\box59
 \pgf@layerbox@main=\box60
-\pgf@picture@serial@count=\count275
-)
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcoregraphic
-state.code.tex"
+\pgf@picture@serial@count=\count276
+) ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex"
 File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgflinewidth=\dimen183
-)
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcoretransfo
-rmations.code.tex"
+) ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex"
 File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@pt@x=\dimen184
 \pgf@pt@y=\dimen185
 \pgf@pt@temp=\dimen186
-)
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcorequick.c
-ode.tex"
+) ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex"
 File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcoreobjects
-.code.tex"
+) ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex"
 File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcorepathpro
-cessing.code.tex"
+) ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex"
 File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcorearrows.
-code.tex"
+) ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex"
 File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfarrowsep=\dimen187
-)
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcoreshade.c
-ode.tex"
+) ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@max=\dimen188
-\pgf@sys@shading@range@num=\count276
-\pgf@shadingcount=\count277
-)
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcoreimage.c
-ode.tex"
+\pgf@sys@shading@range@num=\count277
+\pgf@shadingcount=\count278
+) ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex"
 File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcoreexterna
-l.code.tex"
+ ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex"
 File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfexternal@startupbox=\box61
-))
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcorelayers.
-code.tex"
+)) ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex"
 File: pgfcorelayers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcoretranspa
-rency.code.tex"
+) ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex"
 File: pgfcoretransparency.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcorepattern
-s.code.tex"
+) ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex"
 File: pgfcorepatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcorerdf.cod
-e.tex"
+) ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex"
 File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)))
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/modules\pgfmoduleshapes.c
-ode.tex"
+))) ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex"
 File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfnodeparttextbox=\box62
-)
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/modules\pgfmoduleplot.cod
-e.tex"
+) ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex"
 File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)
-("F:\Other Program Files\Latex\MikTeX\tex/latex/pgf/compatibility\pgfcomp-versi
-on-0-65.sty"
+) ("F:\Other Program Files\Latex\MikTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty"
 Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@nodesepstart=\dimen189
 \pgf@nodesepend=\dimen190
-)
-("F:\Other Program Files\Latex\MikTeX\tex/latex/pgf/compatibility\pgfcomp-versi
-on-1-18.sty"
+) ("F:\Other Program Files\Latex\MikTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty"
 Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
-))
-("F:\Other Program Files\Latex\MikTeX\tex/latex/pgf/utilities\pgffor.sty"
-("F:\Other Program Files\Latex\MikTeX\tex/latex/pgf/utilities\pgfkeys.sty"
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/utilities\pgfkeys.code.te
-x")) ("F:\Other Program Files\Latex\MikTeX\tex/latex/pgf/math\pgfmath.sty"
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmath.code.tex"))
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/utilities\pgffor.code.tex
-"
+)) ("F:\Other Program Files\Latex\MikTeX\tex/latex/pgf/utilities\pgffor.sty" ("F:\Other Program Files\Latex\MikTeX\tex/latex/pgf/utilities\pgfkeys.sty" ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/utilities\pgfkeys.code.tex")) ("F:\Other Program Files\Latex\MikTeX\tex/latex/pgf/math\pgfmath.sty" ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmath.code.tex")) ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/utilities\pgffor.code.tex"
 Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
  ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/math\pgfmath.code.tex")
 \pgffor@iter=\dimen191
 \pgffor@skip=\dimen192
 \pgffor@stack=\toks32
 \pgffor@toks=\toks33
-))
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/frontendlayer/tikz\tikz.c
-ode.tex"
+)) ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex"
 Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
-
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/libraries\pgflibraryploth
-andlers.code.tex"
+ ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex"
 File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@plot@mark@count=\count278
+\pgf@plot@mark@count=\count279
 \pgfplotmarksize=\dimen193
 )
 \tikz@lastx=\dimen194
@@ -598,25 +445,20 @@ File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \tikz@figbox@bg=\box64
 \tikz@tempbox=\box65
 \tikz@tempbox@bg=\box66
-\tikztreelevel=\count279
-\tikznumberofchildren=\count280
-\tikznumberofcurrentchild=\count281
-\tikz@fig@count=\count282
-
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/modules\pgfmodulematrix.c
-ode.tex"
+\tikztreelevel=\count280
+\tikznumberofchildren=\count281
+\tikznumberofcurrentchild=\count282
+\tikz@fig@count=\count283
+ ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfmatrixcurrentrow=\count283
-\pgfmatrixcurrentcolumn=\count284
-\pgf@matrix@numberofcolumns=\count285
+\pgfmatrixcurrentrow=\count284
+\pgfmatrixcurrentcolumn=\count285
+\pgf@matrix@numberofcolumns=\count286
 )
-\tikz@expandcount=\count286
-
-("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/frontendlayer/tikz/librar
-ies\tikzlibrarytopaths.code.tex"
+\tikz@expandcount=\count287
+ ("F:\Other Program Files\Latex\MikTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex"
 File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)))
-("F:\Other Program Files\Latex\MikTeX\tex/latex/mdframed\md-frame-1.mdf"
+))) ("F:\Other Program Files\Latex\MikTeX\tex/latex/mdframed\md-frame-1.mdf"
 File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 )
 \mdf@frametitlebox=\box67
@@ -651,75 +493,83 @@ File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 \mdf@horizontalspaceofbox=\skip135
 \mdfsubtitleheight=\skip136
 \mdfsubsubtitleheight=\skip137
-\c@mdfcountframes=\count287
+\c@mdfcountframes=\count288
 
 ****** mdframed patching \endmdf@trivlist
 
 ****** -- success******
 
-\mdf@envdepth=\count288
-\c@mdf@env@i=\count289
-\c@mdf@env@ii=\count290
-\c@mdf@zref@counter=\count291
+\mdf@envdepth=\count289
+\c@mdf@env@i=\count290
+\c@mdf@env@ii=\count291
+\c@mdf@zref@counter=\count292
 Package zref Info: New property: mdf@pagevalue on input line 895.
-)
-("F:\Other Program Files\Latex\MikTeX\tex/latex/listings\listings.sty"
-\lst@mode=\count292
-\lst@gtempboxa=\box72
-\lst@token=\toks34
-\lst@length=\count293
-\lst@currlwidth=\dimen258
-\lst@column=\count294
-\lst@pos=\count295
-\lst@lostspace=\dimen259
-\lst@width=\dimen260
-\lst@newlines=\count296
-\lst@lineno=\count297
-\lst@maxwidth=\dimen261
-
-("F:\Other Program Files\Latex\MikTeX\tex/latex/listings\lstmisc.sty"
+) ("F:\Other Program Files\Latex\MikTeX\tex/latex/titlesec\titlesec.sty"
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box72
+\beforetitleunit=\skip138
+\aftertitleunit=\skip139
+\ttl@plus=\dimen258
+\ttl@minus=\dimen259
+\ttl@toksa=\toks34
+\titlewidth=\dimen260
+\titlewidthlast=\dimen261
+\titlewidthfirst=\dimen262
+) ("F:\Other Program Files\Latex\MikTeX\tex/latex/listings\listings.sty"
+\lst@mode=\count293
+\lst@gtempboxa=\box73
+\lst@token=\toks35
+\lst@length=\count294
+\lst@currlwidth=\dimen263
+\lst@column=\count295
+\lst@pos=\count296
+\lst@lostspace=\dimen264
+\lst@width=\dimen265
+\lst@newlines=\count297
+\lst@lineno=\count298
+\lst@maxwidth=\dimen266
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/listings\lstmisc.sty"
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count298
-\lst@skipnumbers=\count299
-\lst@framebox=\box73
-)
-("F:\Other Program Files\Latex\MikTeX\tex/latex/listings\listings.cfg"
+\c@lstnumber=\count299
+\lst@skipnumbers=\count300
+\lst@framebox=\box74
+) ("F:\Other Program Files\Latex\MikTeX\tex/latex/listings\listings.cfg"
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
-
-("F:\Other Program Files\Latex\MikTeX\tex/latex/tools\indentfirst.sty"
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/physics\physics.sty"
+Package: physics 
+) ("F:\Other Program Files\Latex\MikTeX\tex/latex/tools\indentfirst.sty"
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
-)
-("F:\Other Program Files\Latex\MikTeX\tex/latex/geometry\geometry.sty"
+) ("F:\Other Program Files\Latex\MikTeX\tex/latex/appendix\appendix.sty"
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count301
+\c@@ppsavesec=\count302
+\c@@ppsaveapp=\count303
+) ("F:\Other Program Files\Latex\MikTeX\tex/latex/geometry\geometry.sty"
 Package: geometry 2020/01/02 v5.9 Page Geometry
-
-("F:\Other Program Files\Latex\MikTeX\tex/generic/iftex\ifvtex.sty"
+ ("F:\Other Program Files\Latex\MikTeX\tex/generic/iftex\ifvtex.sty"
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count300
-\Gm@cntv=\count301
-\c@Gm@tempcnt=\count302
-\Gm@bindingoffset=\dimen262
-\Gm@wd@mp=\dimen263
-\Gm@odd@mp=\dimen264
-\Gm@even@mp=\dimen265
-\Gm@layoutwidth=\dimen266
-\Gm@layoutheight=\dimen267
-\Gm@layouthoffset=\dimen268
-\Gm@layoutvoffset=\dimen269
-\Gm@dimlist=\toks35
-
-("F:\Other Program Files\Latex\MikTeX\tex/latex/geometry\geometry.cfg"))
-("F:\Other Program Files\Latex\MikTeX\tex/latex/base\fontenc.sty"
+\Gm@cnth=\count304
+\Gm@cntv=\count305
+\c@Gm@tempcnt=\count306
+\Gm@bindingoffset=\dimen267
+\Gm@wd@mp=\dimen268
+\Gm@odd@mp=\dimen269
+\Gm@even@mp=\dimen270
+\Gm@layoutwidth=\dimen271
+\Gm@layoutheight=\dimen272
+\Gm@layouthoffset=\dimen273
+\Gm@layoutvoffset=\dimen274
+\Gm@dimlist=\toks36
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/geometry\geometry.cfg")) ("F:\Other Program Files\Latex\MikTeX\tex/latex/base\fontenc.sty"
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
-
-("F:\Other Program Files\Latex\MikTeX\tex/latex/cyrillic\t2aenc.def"
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/cyrillic\t2aenc.def"
 File: t2aenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
 Now handling font encoding T2A ...
 ... processing UTF-8 mapping file for font encoding T2A
-
-("F:\Other Program Files\Latex\MikTeX\tex/latex/base\t2aenc.dfu"
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/base\t2aenc.dfu"
 File: t2aenc.dfu 2019/11/14 v1.2k UTF-8 support for inputenc
    defining Unicode char U+00A4 (decimal 164)
    defining Unicode char U+00A7 (decimal 167)
@@ -918,39 +768,32 @@ File: t2aenc.dfu 2019/11/14 v1.2k UTF-8 support for inputenc
    defining Unicode char U+FB05 (decimal 64261)
    defining Unicode char U+FB06 (decimal 64262)
 ))
-LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 1
-12.
-
-("F:\Other Program Files\Latex\MikTeX\tex/latex/cyrillic\t2acmr.fd"
+LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 112.
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/cyrillic\t2acmr.fd"
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ))
 ("F:\Other Program Files\Latex\MikTeX\tex/latex/base\inputenc.sty"
 Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks36
-\inpenc@posthook=\toks37
-)
-("F:\Other Program Files\Latex\MikTeX\tex/generic/babel\babel.sty"
-Package: babel 2020/05/13 3.44 The Babel package
-
-("F:\Other Program Files\Latex\MikTeX\tex/generic/babel\babel.def"
-File: babel.def 2020/05/13 3.44 Babel common definitions
-\babel@savecnt=\count303
-\U@D=\dimen270
+\inpenc@prehook=\toks37
+\inpenc@posthook=\toks38
+) ("F:\Other Program Files\Latex\MikTeX\tex/generic/babel\babel.sty"
+Package: babel 2020/07/13 3.47 The Babel package
+ ("F:\Other Program Files\Latex\MikTeX\tex/generic/babel\babel.def"
+File: babel.def 2020/07/13 3.47 Babel common definitions
+\babel@savecnt=\count307
+\U@D=\dimen275
 \l@babelnohyphens=\language79
-
-("F:\Other Program Files\Latex\MikTeX\tex/generic/babel\txtbabel.def")
+ ("F:\Other Program Files\Latex\MikTeX\tex/generic/babel\txtbabel.def")
 \bbl@readstream=\read3
 )
-\bbl@dirlevel=\count304
+\bbl@dirlevel=\count308
 
 *************************************
 * Local config file bblopts.cfg used
 *
 ("F:\Other Program Files\Latex\MikTeX\tex/latex/arabi\bblopts.cfg"
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
- babel
-)
-("F:\Other Program Files\Latex\MikTeX\tex/latex/babel-english\english.ldf"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) ("F:\Other Program Files\Latex\MikTeX\tex/latex/babel-english\english.ldf"
 Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: \l@canadian = using hyphenrules for english
 (babel)             (\language0) on input line 102.
@@ -958,25 +801,19 @@ Package babel Info: \l@australian = using hyphenrules for ukenglish
 (babel)             (\language73) on input line 105.
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
 (babel)             (\language73) on input line 108.
-)
-("F:\Other Program Files\Latex\MikTeX\tex/latex/babel-russian\russianb.ldf"
+) ("F:\Other Program Files\Latex\MikTeX\tex/latex/babel-russian\russianb.ldf"
 Language: russian 2017/08/12 1.3j Russian support for the Babel system
 Package babel Info: Making " an active character on input line 120.
 Package babel Info: Default for \cyrdash is provided on input line 157.
-))
-("F:\Other Program Files\Latex\MikTeX\tex/latex/xcharter\XCharter.sty"
-Package: XCharter 2019/11/21 v1.203
-
-`XCharter' v1.203, 2019/11/21 Text macros for XCharter, an extension of Charter
- (msharpe) ("F:\Other Program Files\Latex\MikTeX\tex/latex/base\fontenc.sty"
+)) ("F:\Other Program Files\Latex\MikTeX\tex/latex/xcharter\XCharter.sty"
+Package: XCharter 2020/06/27 v1.207
+ `XCharter' v1.207, 2020/06/27 Text macros for XCharter, an extension of Charter (msharpe) ("F:\Other Program Files\Latex\MikTeX\tex/latex/base\fontenc.sty"
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
-
-("F:\Other Program Files\Latex\MikTeX\tex/latex/ly1\ly1enc.def"
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/ly1\ly1enc.def"
 File: ly1enc.def 2009/07/22 v0.7 TeX 'n ANSI encoding (DPC/KB)
 Now handling font encoding LY1 ...
 ... processing UTF-8 mapping file for font encoding LY1
-
-("F:\Other Program Files\Latex\MikTeX\tex/latex/base\ly1enc.dfu"
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/base\ly1enc.dfu"
 File: ly1enc.dfu 2019/11/14 v1.2k UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -1103,12 +940,20 @@ File: ly1enc.dfu 2019/11/14 v1.2k UTF-8 support for inputenc
    defining Unicode char U+FB04 (decimal 64260)
    defining Unicode char U+FB05 (decimal 64261)
    defining Unicode char U+FB06 (decimal 64262)
-)))
-("F:\Other Program Files\Latex\MikTeX\tex/latex/base\textcomp.sty"
+))) ("F:\Other Program Files\Latex\MikTeX\tex/latex/base\textcomp.sty"
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+) ("F:\Other Program Files\Latex\MikTeX\tex/latex/carlisle\scalefnt.sty")
+LaTeX Font Info:    Setting XCharter-LF sub-encoding to TS1/0 on input line 16.
+LaTeX Font Info:    Changing XCharter-TLF sub-encoding to TS1/0 on input line 16.
+LaTeX Font Info:    Setting XCharter-OsF sub-encoding to TS1/0 on input line 16.
+LaTeX Font Info:    Changing XCharter-TOsF sub-encoding to TS1/0 on input line 16.
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/xstring\xstring.sty" ("F:\Other Program Files\Latex\MikTeX\tex/generic/xstring\xstring.tex"
+\integerpart=\count309
+\decimalpart=\count310
 )
-("F:\Other Program Files\Latex\MikTeX\tex/latex/fontaxes\fontaxes.sty"
-Package: fontaxes 2014/03/23 v1.0d Font selection axes
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+) ("F:\Other Program Files\Latex\MikTeX\tex/latex/fontaxes\fontaxes.sty"
+Package: fontaxes 2020/07/21 v1.0e Font selection axes
 LaTeX Info: Redefining \upshape on input line 29.
 LaTeX Info: Redefining \itshape on input line 31.
 LaTeX Info: Redefining \slshape on input line 33.
@@ -1119,44 +964,30 @@ LaTeX Info: Redefining \ulcshape on input line 41.
 LaTeX Info: Redefining \textsw on input line 47.
 LaTeX Info: Redefining \textssc on input line 48.
 LaTeX Info: Redefining \textulc on input line 49.
-)
-("F:\Other Program Files\Latex\MikTeX\tex/latex/xkeyval\xkeyval.sty"
+) ("F:\Other Program Files\Latex\MikTeX\tex/latex/xkeyval\xkeyval.sty"
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
-
-("F:\Other Program Files\Latex\MikTeX\tex/generic/xkeyval\xkeyval.tex"
-("F:\Other Program Files\Latex\MikTeX\tex/generic/xkeyval\xkvutils.tex"
-\XKV@toks=\toks38
-\XKV@tempa@toks=\toks39
+ ("F:\Other Program Files\Latex\MikTeX\tex/generic/xkeyval\xkeyval.tex" ("F:\Other Program Files\Latex\MikTeX\tex/generic/xkeyval\xkvutils.tex"
+\XKV@toks=\toks39
+\XKV@tempa@toks=\toks40
 )
-\XKV@depth=\count305
+\XKV@depth=\count311
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )))
-\c@Question=\count306
+\c@Question=\count312
 )
-LaTeX Font Info:    Trying to load font information for T1+XCharter-TLF on inpu
-t line 38.
-
-("F:\Other Program Files\Latex\MikTeX\tex/latex/xcharter\t1xcharter-tlf.fd"
-File: T1XCharter-TLF.fd 2017/06/25 (autoinst) Font definitions for T1/XCharter-
-TLF.
+LaTeX Font Info:    Trying to load font information for T1+XCharter-TLF on input line 38.
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/xcharter\t1xcharter-tlf.fd"
+File: T1XCharter-TLF.fd 2017/06/25 (autoinst) Font definitions for T1/XCharter-TLF.
 )
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 38.
-
-(main.aux
-LaTeX Font Info:    Trying to load font information for T2A+XCharter-TLF on inp
-ut line 6.
-
-("F:\Other Program Files\Latex\MikTeX\tex/latex/xcharter\t2axcharter-tlf.fd"
-File: T2AXCharter-TLF.fd 2017/06/25 (autoinst) Font definitions for T2A/XCharte
-r-TLF.
+ ("f:/Dev\Projects\Lyssa\Ritz Method\main.aux"
+LaTeX Font Info:    Trying to load font information for T2A+XCharter-TLF on input line 7.
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/xcharter\t2axcharter-tlf.fd"
+File: T2AXCharter-TLF.fd 2017/06/25 (autoinst) Font definitions for T2A/XCharter-TLF.
 )
 LaTeX Font Info:    Font shape `T2A/XCharter-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 6.
-
-
-LaTeX Warning: Label `equation_rang_2' multiply defined.
-
+(Font)              scaled to size 10.0pt on input line 7.
 )
 \openout1 = `main.aux'.
 
@@ -1177,34 +1008,30 @@ LaTeX Font Info:    ... okay on input line 38.
 LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 38.
 LaTeX Font Info:    ... okay on input line 38.
 LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 38.
-LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 3
-8.
+LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 38.
  ("F:\Other Program Files\Latex\MikTeX\tex/latex/ly1\ly1ptm.fd"
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
 LaTeX Font Info:    ... okay on input line 38.
-\AtBeginShipoutBox=\box74
-
-("F:\Other Program Files\Latex\MikTeX\tex/context/base/mkii\supp-pdf.mkii"
+\AtBeginShipoutBox=\box75
+ ("F:\Other Program Files\Latex\MikTeX\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count307
-\scratchdimen=\dimen271
-\scratchbox=\box75
-\nofMPsegments=\count308
-\nofMParguments=\count309
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count310
-\MPscratchDim=\dimen272
-\MPnumerator=\count311
-\makeMPintoPDFobject=\count312
-\everyMPtoPDFconversion=\toks41
-) ("F:\Other Program Files\Latex\MikTeX\tex/latex/epstopdf-pkg\epstopdf-base.st
-y"
+\scratchcounter=\count313
+\scratchdimen=\dimen276
+\scratchbox=\box76
+\nofMPsegments=\count314
+\nofMParguments=\count315
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count316
+\MPscratchDim=\dimen277
+\MPnumerator=\count317
+\makeMPintoPDFobject=\count318
+\everyMPtoPDFconversion=\toks42
+) ("F:\Other Program Files\Latex\MikTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
 ) ABD: EveryShipout initializing macros
-\c@lstlisting=\count313
+\c@lstlisting=\count319
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1214,19 +1041,19 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
-* v-part:(T,H,B)=(71.13188pt, 688.5567pt, 85.35826pt)
+* h-part:(L,W,R)=(56.9055pt, 497.92325pt, 42.67912pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=455.24411pt
-* \textheight=688.5567pt
-* \oddsidemargin=-1.1381pt
-* \evensidemargin=-1.1381pt
-* \topmargin=-49.28133pt
+* \textwidth=497.92325pt
+* \textheight=731.23584pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-54.36449pt
 * \headheight=14.0pt
-* \headsep=34.14322pt
+* \headsep=25.0pt
 * \topskip=10.0pt
-* \footskip=42.67912pt
+* \footskip=30.0pt
 * \marginparwidth=65.0pt
 * \marginparsep=11.0pt
 * \columnsep=10.0pt
@@ -1240,31 +1067,24 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@mv@tabular=\count314
-\c@mv@boldtabular=\count315
+\c@mv@tabular=\count320
+\c@mv@boldtabular=\count321
 LaTeX Font Info:    Font shape `T2A/XCharter-TLF/m/n' will be
 (Font)              scaled to size 17.28pt on input line 40.
 LaTeX Font Info:    Font shape `T2A/XCharter-TLF/m/n' will be
 (Font)              scaled to size 12.0pt on input line 40.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 40.
-
 ("F:\Other Program Files\Latex\MikTeX\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 40.
-
-
-("F:\Other Program Files\Latex\MikTeX\tex/latex/amsfonts\umsb.fd"
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 4
-0.
-
-("F:\Other Program Files\Latex\MikTeX\tex/latex/stmaryrd\ustmry.fd")
-LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
-40.
-
-("F:\Other Program Files\Latex\MikTeX\tex/latex/cyrillic\t2acmtt.fd"
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 40.
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/stmaryrd\ustmry.fd")
+LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 40.
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/cyrillic\t2acmtt.fd"
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
 LaTeX Font Info:    Font shape `T2A/XCharter-TLF/m/n' will be
@@ -1277,102 +1097,48 @@ LaTeX Font Info:    Font shape `T2A/XCharter-TLF/m/n' will be
 (Font)              scaled to size 7.0pt on input line 50.
 LaTeX Font Info:    Font shape `T2A/XCharter-TLF/b/n' will be
 (Font)              scaled to size 7.0pt on input line 50.
+ [1
 
-Overfull \hbox (8.27834pt too wide) in paragraph at lines 54--55
-[]\T2A/XCharter-TLF/m/n/10 –ешающий вклад в раз-ви-тие ва-ри-а-ци-он-но-го ис-ч
-ис-ле-ни€ внес-ли Ћео-нард Ёй-лер и ∆о-зеф Ћагранж.
- []
-
-[1
-
-{C:/Users/User/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+{C:/Users/User/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `T2A/XCharter-TLF/b/n' will be
 (Font)              scaled to size 12.0pt on input line 72.
-<images/img_001.png, id=14, 266.49562pt x 215.30438pt>
-File: images/img_001.png Graphic file (type png)
-<use images/img_001.png>
-Package pdftex.def Info: images/img_001.png  used on input line 110.
-(pdftex.def)             Requested size: 140.87196pt x 113.81102pt.
-
-[3 <./images/img_001.png>] [4] [5] [6] [7]
+<images/01_Brachistochrone_Curve.png, id=11, 266.49562pt x 215.30438pt>
+File: images/01_Brachistochrone_Curve.png Graphic file (type png)
+<use images/01_Brachistochrone_Curve.png>
+Package pdftex.def Info: images/01_Brachistochrone_Curve.png  used on input line 110.
+(pdftex.def)             Requested size: 246.52898pt x 199.16928pt.
+ [2 <f:/Dev/Projects/Lyssa/Ritz Method/images/01_Brachistochrone_Curve.png>] [3] [4] [5]
 LaTeX Font Info:    Font shape `T2A/XCharter-TLF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 321.
- [8] [9]
+(Font)              scaled to size 5.0pt on input line 368.
+ [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16]
 
-LaTeX Warning: Reference `euler_equation' on page 10 undefined on input line 50
-3.
+LaTeX Warning: Command \cyrs invalid in math mode on input line 951.
 
-[10] [11]
-
-LaTeX Warning: Reference `euler_equation' on page 12 undefined on input line 65
-9.
-
-[12] [13] [14] [15] [16] [17]
-("F:\Other Program Files\Latex\MikTeX\tex/latex/listings\lstlang1.sty"
+Missing character: There is no с in font cmr10!
+[17] [18] ("F:\Other Program Files\Latex\MikTeX\tex/latex/listings\lstlang1.sty"
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 LaTeX Font Info:    Font shape `T2A/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `T2A/cmtt/m/n' tried instead on input line 820.
-LaTeX Font Info:    Trying to load font information for T2A+cmss on input line 
-833.
-
-("F:\Other Program Files\Latex\MikTeX\tex/latex/cyrillic\t2acmss.fd"
+(Font)              Font shape `T2A/cmtt/m/n' tried instead on input line 973.
+LaTeX Font Info:    Trying to load font information for T2A+cmss on input line 985.
+ ("F:\Other Program Files\Latex\MikTeX\tex/latex/cyrillic\t2acmss.fd"
 File: t2acmss.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-Overfull \hbox (5.11531pt too wide) in paragraph at lines 836--838
-\T2A/XCharter-TLF/m/n/10 aliquet turpis. Vivamus molestie urna quis tempor tris
-tique. Proin hendrerit sem nec tempor sollicitudin.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 836--838
-
- []
-
 LaTeX Font Info:    Font shape `T2A/XCharter-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 861.
-
-Overfull \hbox (2.56082pt too wide) in paragraph at lines 873--874
-\T2A/XCharter-TLF/m/n/10 commodo augue. In vel lobortis lacus. Nam ornare ullam
-corper mauris vel molestie. Maecenas vehicula
- []
-
-[18] [19] (main.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+(Font)              scaled to size 10.0pt on input line 1013.
+ [19] ("f:/Dev\Projects\Lyssa\Ritz Method\main.aux") ) 
 Here is how much of TeX's memory you used:
- 20816 strings out of 480795
- 384179 string characters out of 2901632
- 823643 words of memory out of 3000000
- 36378 multiletter control sequences out of 15000+200000
- 572462 words of font info for 74 fonts, out of 3000000 for 9000
+ 22098 strings out of 481212
+ 399760 string characters out of 2910126
+ 852329 words of memory out of 3000000
+ 37213 multiletter control sequences out of 15000+200000
+ 578705 words of font info for 87 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 76i,12n,74p,2282b,1477s stack positions out of 5000i,500n,10000p,200000b,50000s
-{F:/Other Program Files/Latex/MikTeX/fonts/enc/dvips/xcharter/xch_cxo25j.enc}
- <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\lass1
-000.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi60
-0\latt1000.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2
-a/dpi600\lait1000.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/l
-h/lh-t2a/dpi600\latt1200.pk><F:/Other Program Files/Latex/MikTeX/fonts/type1/pu
-blic/xcharter/XCharter-Bold.pfb><F:/Other Program Files/Latex/MikTeX/fonts/type
-1/public/xcharter/XCharter-Italic.pfb><F:/Other Program Files/Latex/MikTeX/font
-s/type1/public/xcharter/XCharter-Roman.pfb><F:/Other Program Files/Latex/MikTeX
-/fonts/type1/public/amsfonts/cm/cmex10.pfb><F:/Other Program Files/Latex/MikTeX
-/fonts/type1/public/amsfonts/cm/cmmi10.pfb><F:/Other Program Files/Latex/MikTeX
-/fonts/type1/public/amsfonts/cm/cmmi7.pfb><F:/Other Program Files/Latex/MikTeX/
-fonts/type1/public/amsfonts/cm/cmr10.pfb><F:/Other Program Files/Latex/MikTeX/f
-onts/type1/public/amsfonts/cm/cmr5.pfb><F:/Other Program Files/Latex/MikTeX/fon
-ts/type1/public/amsfonts/cm/cmr7.pfb><F:/Other Program Files/Latex/MikTeX/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb><F:/Other Program Files/Latex/MikTeX/fonts
-/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on main.pdf (19 pages, 352970 bytes).
+ 76i,12n,74p,2316b,1473s stack positions out of 5000i,500n,10000p,200000b,50000s
+{F:/Other Program Files/Latex/MikTeX/fonts/enc/dvips/xcharter/xch_kkifs2.enc} <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\lass1000.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\latt1000.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\lait1000.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\latt1200.pk>{F:/Other Program Files/Latex/MikTeX/fonts/enc/dvips/xcharter/xch_2jytnu.enc}<F:/Other Program Files/Latex/MikTeX/fonts/type1/public/xcharter/XCharter-Bold.pfb><F:/Other Program Files/Latex/MikTeX/fonts/type1/public/xcharter/XCharter-Italic.pfb><F:/Other Program Files/Latex/MikTeX/fonts/type1/public/xcharter/XCharter-Roman.pfb><F:/Other Program Files/Latex/MikTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><F:/Other Program Files/Latex/MikTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><F:/Other Program Files/Latex/MikTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><F:/Other Program Files/Latex/MikTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><F:/Other Program Files/Latex/MikTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><F:/Other Program Files/Latex/MikTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><F:/Other Program Files/Latex/MikTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><F:/Other Program Files/Latex/MikTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on "f:/Dev\Projects\Lyssa\Ritz Method\main.pdf" (19 pages, 377475 bytes).
 PDF statistics:
- 199 PDF objects out of 1000 (max. 8388607)
+ 200 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
