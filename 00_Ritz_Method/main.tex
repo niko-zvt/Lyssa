@@ -1059,7 +1059,7 @@ $\bullet$ Краснов М. Л. Вариационное исчисление, 
 \noindent для каждого $k$. Здесь $E$ - энергия, $\{ c_{j} \}$ - неизвестные коэффициенты.
 
 На языке метода конечных элементов матрица $H_{kj}$ в точности является матрицей жёсткости гамельтониана $\hat{H}$ в кусочно-линейном пространстве элементов.
-Матрица $S_{kj}$ - матрица масс. На языке линейной алгебры значение $E$ - собственное значение дискретизированного гамельтониана, а вектор $с$ - дискретизированный собственный вектор.
+Матрица $S_{kj}$ - матрица масс. На языке линейной алгебры значение $E$ - собственное значение дискретизированного гамельтониана, а вектор $c$ - дискретизированный собственный вектор.
 
 \begin{info} % Information block
 	Используемая в квантовой химии матрица перекрытия $S_{ij}$ используется для описания взаимосвязи набора базисных векторов квантовой системы.
@@ -1296,74 +1296,5 @@ $\bullet$ Краснов М. Л. Вариационное исчисление, 
 Во-первых, вычислив $\varphi_{n}(x)$ и $\varphi_{n+1}(x)$ сравнивают их между собой в нескольких точках $ x \in \left[a, b\right] $, либо по норме $ \parallel\varphi_{n+1}(x) - \varphi_{n}(x)\parallel$. Если в пределах требуемой точности $ \varepsilon $ их значения совпадают, то считают, что с требуемой точностью решение рассматриваемой вариационной задачи равно $ \varphi_{n}(x) $.
 
 Во-вторых, если значения $\varphi_{n}(x)$ и $\varphi_{n+1}(x)$ пределах заданной точности $\varepsilon$ не совпадают, то вычисляют $\varphi_{n+2}(x)$ и также сравнивают между собой $\varphi_{n+1}(x)$ и $\varphi_{n+2}(x)$. Этот процесс продолжается до тех пор, пока значения $\varphi_{n+k}(x)$ и $\varphi_{n+k+1}(x)$ двух соседних приближений не совпадут в пределах заданной точности.
-
-
-%----------------------------------------------------------------------------------------
-%	EXAMPLES
-%----------------------------------------------------------------------------------------
-
-\newpage
-
-% File contents
-\begin{file}[hello.py]
-\begin{lstlisting}[language=Python]
-#! /usr/bin/python
-
-import sys
-sys.stdout.write("Hello World!\n")
-\end{lstlisting}
-\end{file}
-
-% Command-line "screenshot"
-\begin{commandline}
-	\begin{verbatim}
-		$ chmod +x hello.py
-		$ ./hello.py
-		Hello World!
-	\end{verbatim}
-\end{commandline}
-
-% Warning text, with a custom title
-\begin{warn}[Notice:]
-  In congue risus leo, in gravida enim viverra id. Donec eros mauris, bibendum vel dui at, tempor commodo augue. In vel lobortis lacus. Nam ornare ullamcorper mauris vel molestie. Maecenas vehicula ornare turpis, vitae fringilla orci consectetur vel. Nam pulvinar justo nec neque egestas tristique. Donec ac dolor at libero congue varius sed vitae lectus. Donec et tristique nulla, sit amet scelerisque orci. Maecenas a vestibulum lectus, vitae gravida nulla. Proin eget volutpat orci. Morbi eu aliquet turpis. Vivamus molestie urna quis tempor tristique. Proin hendrerit sem nec tempor sollicitudin.
-\end{warn}
-
-% Numbered question, with subquestions in an enumerate environment
-\begin{question}
-	Quisque ullamcorper placerat ipsum. Cras nibh. Morbi vel justo vitae lacus tincidunt ultrices. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-
-	% Subquestions numbered with letters
-	\begin{enumerate}[(a)]
-		\item Do this.
-		\item Do that.
-		\item Do something else.
-	\end{enumerate}
-\end{question}
-
-\begin{center}
-	\begin{minipage}{0.5\linewidth} % Adjust the minipage width to accomodate for the length of algorithm lines
-		\begin{algorithm}[H]
-			\KwIn{$(a, b)$, two floating-point numbers}  % Algorithm inputs
-			\KwResult{$(c, d)$, such that $a+b = c + d$} % Algorithm outputs/results
-			\medskip
-			\If{$\vert b\vert > \vert a\vert$}{
-				exchange $a$ and $b$ \;
-			}
-			$c \leftarrow a + b$ \;
-			$z \leftarrow c - a$ \;
-			$d \leftarrow b - z$ \;
-			{\bf return} $(c,d)$ \;
-			\caption{\texttt{FastTwoSum}} % Algorithm name
-			\label{alg:fastTwoSum}   % optional label to refer to
-		\end{algorithm}
-	\end{minipage}
-\end{center}
-
-% Numbered question, with an optional title
-\begin{question}[\itshape (with optional title)]
-	In congue risus leo, in gravida enim viverra id. Donec eros mauris, bibendum vel dui at, tempor commodo augue. In vel lobortis lacus. Nam ornare ullamcorper mauris vel molestie. Maecenas vehicula ornare turpis, vitae fringilla orci consectetur vel. Nam pulvinar justo nec neque egestas tristique. Donec ac dolor at libero congue varius sed vitae lectus. Donec et tristique nulla, sit amet scelerisque orci. Maecenas a vestibulum lectus, vitae gravida nulla. Proin eget volutpat orci. Morbi eu aliquet turpis. Vivamus molestie urna quis tempor tristique. Proin hendrerit sem nec tempor sollicitudin.
-\end{question}
-
-%----------------------------------------------------------------------------------------
 
 \end{document}
