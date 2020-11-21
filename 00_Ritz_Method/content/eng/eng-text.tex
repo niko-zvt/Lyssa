@@ -1,0 +1,93 @@
+%----------------------------------------------------------------------------------------
+%	Introduction
+%----------------------------------------------------------------------------------------
+
+\section*{Introduction}
+
+\begin{info}
+    Calculus of variations is a mathematical discipline dedicated to finding the extreme (largest and smallest) values of functionals.
+    Functionals are variables that depend on the choice of one or more functions.
+    The calculus of variations is a natural development of the Chapter of mathematical analysis devoted to the problem of finding extremums of functions.
+    The origin and development of the calculus of variations are closely related to the problems of mechanics, physics, and other technical sciences.
+\end{info}
+
+Even in ancient times, the first variational problems related to the category of isoperimetric problems appeared -- for example, the Dido problem. The first variational principle formulated by Heron of Alexandria for the trajectories of reflected light beams in "Catoptrica" (I century A.D.). In medieval Europe isoperimetric tasks engaged Sacrobosco (XIII century), and Bradwarden (XIV century). After the development of analysis, new types of variational problems, mostly of a mechanical nature. Newton in "Mathematical principles of natural philosophy" \; (1687) solves the problem: find the shape of the body of rotation that provides the least resistance when moving in a gas or liquid at a given size. An important historical problem that gave impetus to the development of the modern version of the calculus of variations was the brachistochrone problem (1696). Its rapid solution by several mathematicians showed the huge possibilities of new methods. Among other tasks, it is worth noting the determination of the shape of the chain line, that is, the shape of the equilibrium of a heavy homogeneous thread (1690). General methods for solving variational problems did not yet exist at this time, each problem was solved with the help of ingenious and not always perfect geometric reasoning.
+
+Leonhard Euler and Joseph Lagrange made crucial contributions to the development of the calculus of variations. Euler wrote the first systematic exposition of the calculus of variations and the term itself (1766). Joseph Lagrange independently obtained many fundamental results and introduced the concept of variation (since 1755). At this stage, the Euler-Lagrange equations were derived.
+
+Methods of the calculus of variations are widely used in various fields of mathematics. For example, in differential geometry, they are used to search for geodesic lines and minimal surfaces. In physics, the variational method is one of the most powerful tools for obtaining equations of motion for both discrete and distributed systems, including physical fields. The methods of the calculus of variations are also applicable in statics.
+
+There are two main types of methods for solving variational problems. The first type includes methods that reduce the original problem to solving differential equations. The alternative is the so-called direct methods. These methods in one way or another solve the original problem of finding a function in a given class that would deliver an extreme value to a given functional. One of the most popular methods in this class is the Ritz method.
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 1
+%----------------------------------------------------------------------------------------
+
+\newpage
+
+\section{Calculus of variations}
+
+\subsection{Concept of functional}
+
+In the course of higher mathematics, the concept of a function was introduced. If some number $x$ from the region $D$ is put into correspondence by a specific rule or law, the number of $u$, then we say that set function $u=f(x)$. The region $D$ is called the domain of the function $f(x)$.
+
+If the function $f(x)$ corresponds to the number $J$ according to a certain rule or law, then it is said that the functional $J = \Phi[f(x)]$ or $J = \Phi[u]$ is given. An example of a functional can be a certain integral of the function $f(x)$ or of some expression that depends on $f(x)$,
+
+\begin{displaymath}
+	\Phi[f(x)] = \int_{a}^{b} f(x) \; dx \; \Leftrightarrow \; \Phi[u] = \int_{a}^{b} u \; dx,
+\end{displaymath}
+
+\begin{displaymath}
+	\Phi[f(x)] = \int_{a}^{b} [f''(x) + p(x)f'(x) + q(x)f(x)] \;  dx \; \Leftrightarrow \; \Phi[u] = \int_{a}^{b} [u'' + p(x)u' + q(x)u] \;  dx. 
+\end{displaymath}
+
+If now the function $u = f(x, y)$ is put in accordance with a certain rule or law again the function $v = g(u)$, then we say that the operator $v = L(u)$ or $v = Lu$ is given. Examples of differential operators are:
+
+\begin{displaymath}
+	Lu = u'' + p(x,y)u' + q(x,y)u,
+\end{displaymath}
+
+\begin{displaymath}
+    Lu = \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2}.
+\end{displaymath}
+
+Let's give a stricter definition of the functional. Let $A$ be a set of elements of arbitrary nature, and let each element of $u \in A$ correspond to one and only one number $J = \Phi[u]$. In this case, we say that the set $A$ has the functional $\Phi[u]$. The set $A$ is called the domain of the functional definition $\Phi[u]$ and is denoted by $D(J)$; the number $J$ is called the value of the functional $\Phi[u]$ on the $u$ element. A functional $\Phi[u]$ is called real if all its values are real. A functional $\Phi[u]$ is called linear if its domain of definition is a linear set and if
+
+\begin{displaymath}
+    \Phi[\alpha u + \beta w] = \alpha \cdot \Phi[u] + \beta \cdot \Phi[w],
+\end{displaymath}
+
+\begin{displaymath}
+	\alpha, \beta = const, w \in A.
+\end{displaymath}
+
+%------------------------------------------------
+
+\subsection{The problems leading to the extremum of the functional}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
